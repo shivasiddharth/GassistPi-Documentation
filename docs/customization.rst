@@ -197,12 +197,12 @@ Streaming music from Deezer
 
 2. In the config.yaml, under **Google_cloud_api_key:** replace **ENTER-YOUR-GOOGLE-CLOUD-API-KEY-HERE** with the key from Google Cloud Console.
 
- **Command Syntax:**
+**Command Syntax:**
 
-  To play the playlists added to your Deezer account::
+To play the playlists added to your Deezer account::
 
       Hey Google, Play playlist _playlist-number_ from Deezer.
 
-  Example::
+Example::
 
       Hey Google, Play playlist 1 from Deezer
