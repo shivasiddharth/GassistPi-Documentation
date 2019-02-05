@@ -5,7 +5,7 @@ Configuring Audio
 **NOTE:**
  - Non-Raspberry Pi users and users using other setups, choose the USB-DAC option.    
  - The speaker-test command is used to initialize alsa, so please do not skip that.  
- - AIY-HAT and CUSTOM-HAT users, please reboot the Pi at places mentioned, else it will lead to audio and taskbar issues. 
+ - AIY-HAT users, please reboot the Pi at places mentioned, else it will lead to audio and taskbar issues. 
  - Those using any other DACs or HATs install the cards as per the manufacturer's guide and then you can use the USB-DAC config file after changing the hardware ids.
  - Respeaker users, please do not use their official setup for this project.
  
