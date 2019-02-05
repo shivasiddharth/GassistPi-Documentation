@@ -9,9 +9,7 @@ Configuring Audio
  - Those using any other DACs or HATs install the cards as per the manufacturer's guide and then you can use the USB-DAC config file after changing the hardware ids.
  - Respeaker users, please do not use their official setup for this project.
  
-USB DAC or USB Sound CARD Users  
----------------------------------
-                        ::
+USB DAC or USB Sound CARD Users::  
 
      sudo apt-get update
      cd /home/${USER}/
