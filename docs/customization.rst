@@ -90,10 +90,10 @@ Controlling assistant/sending preset commands using IR remote
 .. note:: The diagram given is for GPIO 17, if you are using another GPIO, please make the suitable changes to the connection.   
 
 
-.. figure:: ../_static/images/IRWiring.jpg
+.. figure:: ../docs/_static/images/IRWiring.jpg
     :align: center
     :figwidth: 300px
-    :target: ../_static/images/IRWiring.jpg  
+    :target: ../docs/_static/images/IRWiring.jpg  
     
 
 2. Run the sample IR receiver script to get the codes for your desired buttons::  
