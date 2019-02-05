@@ -23,4 +23,4 @@ List of Raspberry Pi GPIOs Used In The Project
 | 17                | IR Sensor for preset commands                                         |
 +-------------------+-----------------------------------------------------------------------+
 
-**Note: some HATS may use GPIOs 18, 19, 20, 21 for I2S audio please refer to the manufacturer's pinouts**
+.. note:: Some HATS may use GPIOs 18, 19, 20, 21 for I2S audio please refer to the manufacturer's pinouts

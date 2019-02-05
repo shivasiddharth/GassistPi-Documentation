@@ -278,6 +278,7 @@ Controlling Domoticz devices
 3. To Change  Colour (refer the list of available colors given here_)::
 
    .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/colorlist.html#list-of-available-colors-for-home-automation-projects
+   
       Hey Google, Set  _Name of your light_ color to _desired color_
       Hey Google, Change  _Name of your light_ to _desired color_ color
 
