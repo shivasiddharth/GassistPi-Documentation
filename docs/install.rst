@@ -6,7 +6,6 @@ Installing Google Assistant
 1. Follow the instructions here_  to configure a developer project and account settings.
 
    .. _here: https://developers.google.com/assistant/sdk/guides/library/python/embed/config-dev-project-and-account
-   
    Then follow this guide_  to register the device and obtain the credentials.json file. Refer to the video below for step by step guidelines.
    
    .. _guide: https://developers.google.com/assistant/sdk/guides/library/python/embed/register-device
