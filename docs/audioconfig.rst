@@ -11,7 +11,7 @@ Configuring Audio
  
 Choose the audio configuration according to your setup
 
-USB DAC or USB Sound CARD Users
+USB DAC or USB Sound Card Users
 -------------------------------
 Run the following in the terminal:: 
 
@@ -37,7 +37,7 @@ Run the following in the terminal::
      speaker-test  
 
 
-USB MIC AND HDMI Users
+USB Mic and HDMI Users
 -------------------------
 Run the following in the terminal:: 
 
@@ -52,7 +52,7 @@ Run the following in the terminal::
       speaker-test  
 
 
-USB MIC AND AUDIO JACK Users
+USB Mic and Audio Jack Users
 ------------------------------
 Run the following in the terminal:: 
 
@@ -63,7 +63,7 @@ Run the following in the terminal::
        speaker-test  
 
 
-CUSTOM VOICE HAT Users
+Custom Voice HAT Users
 ------------------------
 Run the following in the terminal:: 
 
@@ -78,7 +78,7 @@ Run the following in the terminal::
        speaker-test   
 
 
-RESPEAKER HAT Users
+Respeaker HAT Users
 ---------------------
 Run the following in the terminal:: 
 
