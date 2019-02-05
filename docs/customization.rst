@@ -46,7 +46,7 @@ Using the interpreter mode
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
 4. From the **API and services** option, select library and in the search bar type **speech**, select **Cloud Speech API** and click on "ENABLE".
-5. You will be prompted to create a billing account if you already have not created one. Follow the onscreen instructions to create a billing account and then Enabled the API.
+5. You will be prompted to create a billing account if you already have not created one. Follow the onscreen instructions to create a billing account and then Enable the API.
 6. Create a service account and generate credentials.
 7. Copy the downloaded the JSON key and place it /home/pi/ directory **DO NOT RENAME**.
 8. Enter the path to the Key along with the key name Eg: /home/pi/xxxx.json  in the config.yaml file in the "Google_Cloud_Speech_Credentials_Path" field under "Speechtotext".
@@ -82,6 +82,21 @@ Using google cloud text to speech
    You can use one key for Cloud Speech and Cloud Text to Speech, but should enter the same path seperately in config.yaml
 
 
+Adding YouTube Data API and generating API key
+-----------------------------------------------
+1. Go to the projects page_ on your Google Cloud Console.
+
+      .. _page: https://console.cloud.google.com/project
+2. Select your project from the list.
+3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
+4. Move your mouse pointer over "API and services" and choose "credentials".
+5. Click on create credentials and select API Key and choose close. Make a note of the created API Key and enter it in the config.yaml script at the indicated location.
+6. "From the API and services" option, select library and in the search bar type youtube, select "YouTube Data API v3" API and click on "ENABLE".
+7. In the API window, click on "All API Credentials" and in the drop down, make sure to have a tick (check mark) against the API Key that you just generated.
+
+.. note:: The same API key can be used for all the associated custom actions.
+
+
 Controlling assistant/sending preset commands using IR remote
 ------------------------------------------------------
 
@@ -89,29 +104,29 @@ Controlling assistant/sending preset commands using IR remote
 
 .. figure:: ../docs/_static/images/IRWiring.jpg
     :align: center
-    :scale: 40%    
-    :target: ../docs/_static/images/IRWiring.jpg  
-    
-.. note:: The diagram given is for GPIO 17, if you are using another GPIO, please make the suitable changes to the connection. 
+    :scale: 40%
+    :target: ../docs/_static/images/IRWiring.jpg
 
-2. Run the sample IR receiver script to get the codes for your desired buttons::  
+.. note:: The diagram given is for GPIO 17, if you are using another GPIO, please make the suitable changes to the connection.
+
+2. Run the sample IR receiver script to get the codes for your desired buttons::
 
       python /home/${USER}/GassistPi/Extras/IR-Sensor.py
 
 3. In the config.yaml under IR, list your codes and corresponding queries/actions. The number of queries should match the number of codes listed.
 
-4. If you want to execute the custom actions like Spotify, YouTube playback, Domoticz Control etc, prefix the word custom. 
-   
+4. If you want to execute the custom actions like Spotify, YouTube playback, Domoticz Control etc, prefix the word custom.
+
    Eg::
-   
+
        custom Play God's Plan from Youtube
        custom Turn On __Domoticz device name__
        custom Play all the songs from Google Music
 
-5. If you are sending a command to be processed by google assistant, there is no need to prefix custom. 
-   
+5. If you are sending a command to be processed by google assistant, there is no need to prefix custom.
+
    Eg::
-   
+
        what is the time
        what can you do for me
 
@@ -122,3 +137,69 @@ Controlling assistant/sending preset commands using IR remote
        <div style="text-align: center; margin-bottom: 2em;">
        <iframe width="100%" height="350" src="https://www.youtube.com/embed/LlbcjkRuQZk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
        </div>
+
+
+Sending commands/queries to Google Assistant over MQTT
+------------------------------------------------------
+
+1. Set up your desired MQTT broker.
+   If you are setting up Raspberry Pi as a MQTT broker, follow the guide below.
+
+   .. raw:: html
+
+       <div style="text-align: center; margin-bottom: 2em;">
+       <iframe width="100%" height="350" src="https://www.youtube.com/embed/Ce2Djxx9shU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       </div>
+
+2. Enter the MQTT broker credentials and subscription topic in the provided config.yaml file.
+3. Set the **MQTT_Control** to **Enabled**.
+4. Now, you can send queries or commands to google assistant over MQTT.
+5. If you are sending a command for custom actions, prefix custom in the payload.
+
+   Eg::
+
+       custom Play God's Plan from Youtube
+       custom Turn On __Domoticz device name__
+       custom Play all the songs from Google Music
+
+6. If you are sending a command to be processed by google assistant, there is no need to prefix custom.
+
+   Eg::
+
+       what is the time
+       what can you do for me
+
+7. To turn on/off microphone just send the simple command mute.
+
+   Eg::
+
+       mute
+
+  For more details on the how to use this feature, refer to the video below:
+  .. raw:: html
+
+      <div style="text-align: center; margin-bottom: 2em;">
+      <iframe width="100%" height="350" src="https://www.youtube.com/embed/oemsmrdhNP8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+
+
+
+Streaming music from Deezer
+---------------------------
+
+.. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
+          This feature uses a YouTube Data API v3. Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
+            
+1. Add your Deezer user number in the config.yaml under the **Deezer:** and **User_id**.
+
+2. In the config.yaml, under **Google_cloud_api_key:** replace **ENTER-YOUR-GOOGLE-CLOUD-API-KEY-HERE** with the key from Google Cloud Console.
+
+**Command Syntax:**
+
+To play the playlists added to your Deezer account::
+
+   Hey Google, Play playlist _playlist-number_ from Deezer.
+
+Example::
+
+   Hey Google, Play playlist 1 from Deezer
