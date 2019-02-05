@@ -2,7 +2,7 @@
 Before Starting
 ============
 
-**For Non-Issue Help and Interaction:** https://gitter.im/GassistPi/Lobby/  
+.. note:: **For Non-Issue Help and Interaction Use Gitter:** https://gitter.im/GassistPi/Lobby/
 
 Supported Platforms
 -------------------
@@ -19,5 +19,5 @@ Getting Started
 
 Install git and clone the project::
 
-    sudo apt-get install git  
-    git clone https://github.com/shivasiddharth/GassistPi   
+    sudo apt-get install git
+    git clone https://github.com/shivasiddharth/GassistPi

@@ -2,7 +2,7 @@
 Configuring audio
 =================
 
-**NOTE:**
+.. note:: 
  - Non-Raspberry Pi users and users using other setups, choose the USB-DAC option.
  - The speaker-test command is used to initialize alsa, so please do not skip that.
  - AIY-HAT users, please reboot the Pi at places mentioned, else it will lead to audio and taskbar issues.
