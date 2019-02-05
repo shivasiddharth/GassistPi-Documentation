@@ -89,10 +89,10 @@ Controlling assistant/sending preset commands using IR remote
 
 .. note:: The diagram given is for GPIO 17, if you are using another GPIO, please make the suitable changes to the connection.
 
-   .. figure:: ../_static/images/IRWiring.jpg
-       :align: center
-       :figwidth: 300px
-       :target: ../_static/images/IRWiring.jpg
+.. figure:: ../_static/images/IRWiring.jpg
+    :align: center
+    :figwidth: 300px
+    :target: ../_static/images/IRWiring.jpg
 
 2. Run the sample IR receiver script to get the codes for your desired buttons::  
 
@@ -100,18 +100,16 @@ Controlling assistant/sending preset commands using IR remote
 
 3. In the config.yaml under IR, list your codes and corresponding queries/actions. The number of queries should match the number of codes listed.
 
-4. If you want to execute the custom actions like Spotify, YouTube playback, Domoticz Control etc, prefix the word custom.  
-   Eg::
+4. If you want to execute the custom actions like Spotify, YouTube playback, Domoticz Control etc, prefix the word custom. Eg::
    
-          custom Play God's Plan from Youtube
-          custom Turn On __Domoticz device name__
-          custom Play all the songs from Google Music
+       custom Play God's Plan from Youtube
+       custom Turn On __Domoticz device name__
+       custom Play all the songs from Google Music
 
-5. If you are sending a command to be processed by google assistant, there is no need to prefix custom.  
-   Eg::   
+5. If you are sending a command to be processed by google assistant, there is no need to prefix custom. Eg::   
    
-          what is the time
-          what can you do for me
+       what is the time
+       what can you do for me
 
 Video for reference:
 
