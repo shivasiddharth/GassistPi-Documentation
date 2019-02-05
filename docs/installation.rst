@@ -5,7 +5,7 @@ Before Starting
 Supported Platforms
 -------------------
 
-Any single board computer or machine running one of the the following OS:
+Any single board computer or machine running one of the the following OS
  - Armbian Stretch
  - Raspbian Stretch
  - OSMC Stretch
