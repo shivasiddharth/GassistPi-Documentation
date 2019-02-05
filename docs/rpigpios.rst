@@ -13,7 +13,7 @@ List of Raspberry Pi GPIOs Used In The Project
 | 05 and 06         | Google assistant listening and responding                             |  
 +-------------------+-----------------------------------------------------------------------+
 | 22                | Pushbutton trigger for gRPC API.                                      |
-|                   | Connect a pushbutton between GPIO 22 and GRND for manually triggering | 
+|                   |  Connect a pushbutton between GPIO 22 and GRND for manually triggering| 
 +-------------------+-----------------------------------------------------------------------+
 | 12,13,24          | Voice control of devices connected to GPIO                            | 
 +-------------------+-----------------------------------------------------------------------+
