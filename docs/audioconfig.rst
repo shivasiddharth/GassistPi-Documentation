@@ -37,7 +37,7 @@ Run the following in the terminal::
      speaker-test  
 
 
-USB MIC AND HDMI Users::  
+USB MIC AND HDMI Users
 -------------------------
 Run the following in the terminal:: 
 
@@ -52,7 +52,7 @@ Run the following in the terminal::
       speaker-test  
 
 
-USB MIC AND AUDIO JACK Users::
+USB MIC AND AUDIO JACK Users
 ------------------------------
 Run the following in the terminal:: 
 
@@ -63,7 +63,7 @@ Run the following in the terminal::
        speaker-test  
 
 
-CUSTOM VOICE HAT Users::
+CUSTOM VOICE HAT Users
 ------------------------
 Run the following in the terminal:: 
 
@@ -78,7 +78,7 @@ Run the following in the terminal::
        speaker-test   
 
 
-RESPEAKER HAT Users::
+RESPEAKER HAT Users
 ---------------------
 Run the following in the terminal:: 
 
