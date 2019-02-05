@@ -13,7 +13,7 @@ Choose the audio configuration according to your setup
 
 USB DAC or USB Sound CARD Users
 -------------------------------
-::
+Run::
      sudo apt-get update
      cd /home/${USER}/
      sudo chmod +x ./GassistPi/audio-drivers/USB-DAC/scripts/install-usb-dac.sh  
