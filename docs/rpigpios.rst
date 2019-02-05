@@ -3,14 +3,15 @@ List of Raspberry Pi GPIOs Used In The Project
 ************************************************  
 
 ==================== ===============================================
-| GPIO Number (BCM)  Purpose                                        |
-|------------------- ------------------------------------------------|
-| 25                | Assistant activity indicator for AIY Kits      |
-| 23                | Pushbutton to stop music/radio AIY and others  |    
-| 05 and 06         | Google assistant listening and responding      |  
-| 22                | Pushbutton trigger for gRPC API. Connect a pushbutton between GPIO 22 and GRND for manually triggering |  
-| 12,13,24          | Voice control of devices connected to GPIO     |  
-| 27                | Voice control of servo                         |
-| 17                | IR Sensor for preset commands                         |     
+ GPIO Number (BCM)   Purpose                                        
+ ------------------- ------------------------------------------------
+ 25                  Assistant activity indicator for AIY Kits      
+ 23                  Pushbutton to stop music/radio AIY and others     
+ 05 and 06           Google assistant listening and responding       
+ 22                  Pushbutton trigger for gRPC API. Connect a pushbutton between GPIO 22 and GRND for manually triggering  
+ 12,13,24            Voice control of devices connected to GPIO       
+ 27                  Voice control of servo                         
+ 17                  IR Sensor for preset commands                             
+=================== =================================================   
 
 **Note: some HATS may use GPIOs 18, 19, 20, 21 for I2S audio please refer to the manufacturer's pinouts**  
