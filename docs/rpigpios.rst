@@ -1,5 +1,5 @@
 ================================================
-List of Raspberry Pi GPIOs Used In The Project
+List of Raspberry Pi GPIOs used in the project
 ================================================
 
 
