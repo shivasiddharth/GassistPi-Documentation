@@ -8,6 +8,8 @@ Every project requires a name and so I named it GassistPi ("G"oogle "Assist"ant 
 
 Fast forwarding to date, the project works not only on Pi boards but on a number of other platforms (checkout the supported platforms page_ for more details).   
 
-It has some interesting custom actions for both entertainment and home-automation needs. Primary language of coding is Python and the project has been structed in a way to allow even inexperienced programmers to modify existing codes and implement their own custom actions. This is a project for the single board community community, driven by the community.
+It has some interesting custom actions for both entertainment and home-automation needs. Primary language of coding is Python and the project has been structed in a way to allow even inexperienced programmers to modify existing codes and implement their own custom actions.    
+
+This is a project for the single board community community, driven by the community.
 
 .. _page: https://gassistpi-documentation.readthedocs.io/en/latest/starting.html#supported-platforms
