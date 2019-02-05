@@ -92,7 +92,7 @@ Controlling assistant/sending preset commands using IR remote
 
 .. figure:: ../docs/_static/images/IRWiring.jpg
     :align: center
-    :scale: 60%    
+    :scale: 20%    
     :target: ../docs/_static/images/IRWiring.jpg  
     
 
