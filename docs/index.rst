@@ -12,5 +12,8 @@ Contents:
    :maxdepth: 3
    :glob:
 
-   *
+   starting
+   audioconfig
+   rpigpios
+   
 
