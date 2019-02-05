@@ -2,15 +2,16 @@
 Configuring audio
 =================
 
-.. note:: 
+.. note::
  - Non-Raspberry Pi users and users using other setups, choose the USB-DAC option.
  - The speaker-test command is used to initialize alsa, so please do not skip that.
  - AIY-HAT users, please reboot the Pi at places mentioned, else it will lead to audio and taskbar issues.
  - Those using any other DACs or HATs install the cards as per the manufacturer's guide and then you can use the USB-DAC config file after changing the hardware ids.
  - Respeaker users, please do not use their official setup for this project.
 
-Choose the audio configuration according to your setup
 
+Choose the audio configuration according to your setup
+------------------------------------------------------
 Non-Raspbian users install Alsa first::
 
         sudo apt-get install alsa-utils
@@ -18,7 +19,7 @@ Non-Raspbian users install Alsa first::
 
 
 USB DAC or USB Sound Card Users
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Run the following in the terminal::
 
      sudo apt-get update
@@ -29,7 +30,7 @@ Run the following in the terminal::
 
 
 AIY-HAT Users
----------------
+~~~~~~~~~~~~~
 Run the following in the terminal::
 
      sudo apt-get update
@@ -44,7 +45,7 @@ Run the following in the terminal::
 
 
 USB Mic and HDMI Users
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~
 Run the following in the terminal::
 
       sudo apt-get update
@@ -59,7 +60,7 @@ Run the following in the terminal::
 
 
 USB Mic and Audio Jack Users
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Run the following in the terminal::
 
        sudo apt-get update
@@ -70,7 +71,7 @@ Run the following in the terminal::
 
 
 Custom Voice HAT Users
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~
 Run the following in the terminal::
 
        sudo apt-get update
@@ -85,7 +86,7 @@ Run the following in the terminal::
 
 
 Respeaker HAT Users
----------------------
+~~~~~~~~~~~~~~~~~~~
 Run the following in the terminal::
 
        sudo apt-get update
