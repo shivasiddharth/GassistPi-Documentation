@@ -21,7 +21,7 @@ Installing Google Assistant
 2. Place the credentials.json file in/home/${USER}/ directory **DO NOT RENAME**    
 
 
-3. Use the one-line installer for installing Google Assistant.    
+3. Use the one-line installer for installing Google Assistant.             
    3.1 Change directory::
 
           cd /home/${USER}/
