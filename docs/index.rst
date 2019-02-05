@@ -10,7 +10,8 @@ Documentation for GassistPi Project
    :maxdepth: 3
    :glob:
 
-   
+
+   about
    features
    starting
    audioconfig
