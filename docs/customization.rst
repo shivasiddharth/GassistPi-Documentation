@@ -38,8 +38,9 @@ Using the interpreter mode
 
 NOTE: THIS MAKES USE OF GOOGLE CLOUD SPEECH API. FREE USAGE IS LIMITED TO 60MINS/MONTH. FOR MORE DETAILS ON THE USAGE LIMITS CHECK THIS LINK_
 
-.. _LINK: https://cloud.google.com/speech-to-text/pricing  
-1. Go to the projects page_ on your Google Cloud Console. .. _page: https://console.cloud.google.com/project
+.. _LINK: https://cloud.google.com/speech-to-text/pricing
+1. Go to the projects page_ on your Google Cloud Console.
+.. _page: https://console.cloud.google.com/project    
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
 4. From the **API and services** option, select library and in the search bar type **speech**, select **Cloud Speech API** and click on "ENABLE".
