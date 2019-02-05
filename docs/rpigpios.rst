@@ -1,6 +1,6 @@
-************************************************  
-List of Raspberry Pi GPIOs Used In The Project  
-************************************************  
+================================================
+List of Raspberry Pi GPIOs Used In The Project
+================================================
 
 
 +-------------------+-----------------------------------------------------------------------+
@@ -10,17 +10,17 @@ List of Raspberry Pi GPIOs Used In The Project
 +-------------------+-----------------------------------------------------------------------+
 | 23                | Pushbutton to stop music/radio AIY and others                         |
 +-------------------+-----------------------------------------------------------------------+
-| 05 and 06         | Google assistant listening and responding                             |  
+| 05 and 06         | Google assistant listening and responding                             |
 +-------------------+-----------------------------------------------------------------------+
 | 22                | Pushbutton trigger for gRPC API.                                      |
 +-------------------+-----------------------------------------------------------------------+
-|                   | Connect a pushbutton between GPIO 22 and GRND for manually triggering.| 
+|                   | Connect a pushbutton between GPIO 22 and GRND for manually triggering.|
 +-------------------+-----------------------------------------------------------------------+
-| 12,13,24          | Voice control of devices connected to GPIO                            | 
+| 12,13,24          | Voice control of devices connected to GPIO                            |
 +-------------------+-----------------------------------------------------------------------+
 | 27                | Voice control of servo                                                |
 +-------------------+-----------------------------------------------------------------------+
 | 17                | IR Sensor for preset commands                                         |
 +-------------------+-----------------------------------------------------------------------+
 
-**Note: some HATS may use GPIOs 18, 19, 20, 21 for I2S audio please refer to the manufacturer's pinouts**  
+**Note: some HATS may use GPIOs 18, 19, 20, 21 for I2S audio please refer to the manufacturer's pinouts**
