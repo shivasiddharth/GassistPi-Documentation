@@ -106,7 +106,7 @@ Controlling assistant/sending preset commands using IR remote
        custom Turn On __Domoticz device name__
        custom Play all the songs from Google Music
 
-5. If you are sending a command to be processed by google assistant, there is no need to prefix custom. Eg::   
+5. If you are sending a command to be processed by google assistant, there is no need to prefix custom. Eg::
    
        what is the time
        what can you do for me
