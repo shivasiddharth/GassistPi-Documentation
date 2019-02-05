@@ -175,7 +175,8 @@ Sending commands/queries to Google Assistant over MQTT
 
        mute
 
-  For more details on the how to use this feature, refer to the video below:
+  **For more details on the how to use this feature, refer to the video below:**
+  
   .. raw:: html
 
       <div style="text-align: center; margin-bottom: 2em;">
@@ -189,7 +190,9 @@ Streaming music from Deezer
 
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
           This feature uses a YouTube Data API v3. Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
-            
+          
+          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key  
+          
 1. Add your Deezer user number in the config.yaml under the **Deezer:** and **User_id**.
 
 2. In the config.yaml, under **Google_cloud_api_key:** replace **ENTER-YOUR-GOOGLE-CLOUD-API-KEY-HERE** with the key from Google Cloud Console.
@@ -198,8 +201,8 @@ Streaming music from Deezer
 
 To play the playlists added to your Deezer account::
 
-   Hey Google, Play playlist _playlist-number_ from Deezer.
+      Hey Google, Play playlist _playlist-number_ from Deezer.
 
 Example::
 
-   Hey Google, Play playlist 1 from Deezer
+      Hey Google, Play playlist 1 from Deezer
