@@ -115,7 +115,7 @@ Controlling assistant/sending preset commands using IR remote
        what is the time
        what can you do for me
 
-**Video for reference:**
+ **Video for reference:**
 
    .. raw:: html
 
