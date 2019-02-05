@@ -3,11 +3,13 @@ Guide to use the customizations/features
 ========================================
 
 
+
 Enabling or disabling custom actions
 ------------------------------------
 
 Major custom actions have been provided with a control key or switch in the **config.yaml**.
 Set it to **Enabled** to enable the custom actions and set it to **Disabled** to disable them.
+
 
 
 Using custom actions in Non-English languages
@@ -22,6 +24,7 @@ Using custom actions in Non-English languages
 4. You can change the keywords/trigger words for the custom actions in the keywords file.
 
 
+
 Controlling Sonoff-Tasmota, Domoticz devices from Google Home
 -------------------------------------------------------------
 
@@ -32,6 +35,7 @@ Controlling Sonoff-Tasmota, Domoticz devices from Google Home
 
    .. _IFTTT: http://www.ifttt.com/
 5. For controlling domoticz and sonoff devices, the adafruit.io command should match the syntaxes for the respective custom actions.
+
 
 
 Using the interpreter mode
@@ -82,6 +86,7 @@ Using google cloud text to speech
    You can use one key for Cloud Speech and Cloud Text to Speech, but should enter the same path seperately in config.yaml
 
 
+
 Adding YouTube Data API and generating API key
 -----------------------------------------------
 1. Go to the projects page_ on your Google Cloud Console.
@@ -95,6 +100,7 @@ Adding YouTube Data API and generating API key
 7. In the API window, click on "All API Credentials" and in the drop down, make sure to have a tick (check mark) against the API Key that you just generated.
 
 .. note:: The same API key can be used for all the associated custom actions.
+
 
 
 Controlling assistant/sending preset commands using IR remote
@@ -139,6 +145,7 @@ Controlling assistant/sending preset commands using IR remote
        </div>
 
 
+
 Sending commands/queries to Google Assistant over MQTT
 ------------------------------------------------------
 
@@ -176,7 +183,7 @@ Sending commands/queries to Google Assistant over MQTT
        mute
 
   **For more details on the how to use this feature, refer to the video below:**
-  
+
   .. raw:: html
 
       <div style="text-align: center; margin-bottom: 2em;">
@@ -190,9 +197,9 @@ Streaming music from Deezer
 
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
           This feature uses a YouTube Data API v3. Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
-          
-          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key  
-          
+
+          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
+
 1. Add your Deezer user number in the config.yaml under the **Deezer:** and **User_id**.
 
 2. In the config.yaml, under **Google_cloud_api_key:** replace **ENTER-YOUR-GOOGLE-CLOUD-API-KEY-HERE** with the key from Google Cloud Console.
@@ -206,3 +213,75 @@ To play the playlists added to your Deezer account::
 Example::
 
       Hey Google, Play playlist 1 from Deezer
+
+
+
+Streaming music from gaana.com
+------------------------------
+
+.. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
+          This feature uses a YouTube Data API v3. Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
+
+          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
+
+1. Add your playlists in the config.yaml under **Gaana: and Playlists:**.
+
+2. In the config.yaml, under **Google_cloud_api_key:** replace **ENTER-YOUR-GOOGLE-CLOUD-API-KEY-HERE** with the key from Google Cloud Console.
+
+**Command Syntax:**
+
+1. To play the playlists added in config.yaml file::
+
+      Hey Google, Play playlist _playlist-number_ from Gaana.com
+
+   Example::
+
+      Hey Google, Play playlist 1 from Gaana.com
+
+2. To play other playlists::
+
+      Hey Google, Play _user-playlist-query_ from Gaana.com
+
+    Example::
+
+      Hey Google, Play Bollywood top 50 from Gaana.com
+
+
+
+Controlling Domoticz devices
+----------------------------
+
+.. note:: As of today, you can control lights and switches only, more controls will be added in the future.
+
+1. In the config.yaml file under **Domoticz:** change **Domoticz_Control:** from **Disabled** to **Enabled**.
+2. List the device names and the ids that you want to control in the config.yaml file.
+   The names should be the same as the ones in the domoticz server.
+
+**Command Syntax:**
+
+1. To On/Off/Toggle::
+
+      Hey Google, Turn On/Turn Off/Toggle  _Name of your light_
+
+    Example::
+
+      Hey Google, Turn On Bedroom Lamp
+
+2. To Change Brightness (between 0 and 100)::
+
+      Hey Google, Set  _Name of your light_ brightness to _desired value_
+
+    Example::
+
+      Hey Google, Set  Bedroom lamp brightness to 5
+
+3. To Change  Colour (refer the list of available colors given here_)::
+
+   .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/colorlist.html#list-of-available-colors-for-home-automation-projects
+      Hey Google, Set  _Name of your light_ color to _desired color_
+      Hey Google, Change  _Name of your light_ to _desired color_ color
+
+   Example::
+
+      Hey Google, Set  Bedroom lamp color to red
+      Hey Google, Change  Bedroom lamp to red color

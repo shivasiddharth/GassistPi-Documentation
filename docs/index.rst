@@ -20,3 +20,4 @@ Documentation for GassistPi Project
    updating
    customization
    rpigpios
+   colorlist
