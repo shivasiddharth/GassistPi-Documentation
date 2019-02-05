@@ -18,10 +18,10 @@ Installing Google Assistant
     </div>
 
 
-2. Place the credentials.json file in/home/${USER}/ directory **DO NOT RENAME**
+2. Place the credentials.json file in/home/${USER}/ directory **DO NOT RENAME**    
 
 
-3. Use the one-line installer for installing Google Assistant.
+3. Use the one-line installer for installing Google Assistant.    
    3.1 Change directory::
 
           cd /home/${USER}/
@@ -34,17 +34,17 @@ Installing Google Assistant
 
           sudo  ./GassistPi/scripts/gassist-installer.sh
 
-   **When Prompted, enter your Google Cloud console Project-Id, A name for your Assistant and the Full path to the credentials file, including the json extension.**
+   **When Prompted, enter your Google Cloud console Project-Id, A name for your Assistant and the Full path to the credentials file, including the json extension.**     
 
 
-4. Copy the google assistant authentication link from terminal and authorize using your google account.   
+4. Copy the google assistant authentication link from terminal and authorize using your google account.       
 
 
-5. Copy the authorization code from browser onto the terminal and press enter.   
+5. Copy the authorization code from browser onto the terminal and press enter.       
 
 
-6. After successful authentication, the Google Assistant Demo test will automatically start.
-   At the start, the volume might be low, the assistant volume is independent of the Pi volume, increase the volume by using "Hey Google, Set volume to maximum" command.   
+6. After successful authentication, the Google Assistant Demo test will automatically start.    
+   At the start, the volume might be low, the assistant volume is independent of the Pi volume, increase the volume by using **Hey Google, Set volume to maximum** command.       
   
 
-7. After verifying the working of assistant, close and exit the terminal.
+7. After verifying the working of assistant, close and exit the terminal.   
