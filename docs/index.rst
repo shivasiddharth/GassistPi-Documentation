@@ -15,4 +15,6 @@ Documentation for GassistPi Project
    audioconfig
    install
    headless
+   updating
+   customization
    rpigpios
