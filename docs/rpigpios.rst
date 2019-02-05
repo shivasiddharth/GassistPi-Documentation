@@ -2,9 +2,9 @@
 List of Raspberry Pi GPIOs Used In The Project  
 ************************************************  
 
-
-| GPIO Number (BCM) | Purpose                                        |
-|-------------------|------------------------------------------------|
+==================== ===============================================
+| GPIO Number (BCM)  Purpose                                        |
+|------------------- ------------------------------------------------|
 | 25                | Assistant activity indicator for AIY Kits      |
 | 23                | Pushbutton to stop music/radio AIY and others  |    
 | 05 and 06         | Google assistant listening and responding      |  
