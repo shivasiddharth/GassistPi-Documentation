@@ -28,14 +28,17 @@ Controlling Sonoff-Tasmota, Domoticz devices from Google Home
 1. This has been implemented using Adafruit_IO.
 2. Create an acount and a feed in adafruit.io website.
 3. Enter those details in the config.yaml file.
-4. Register or login into IFTTT_ and create an applet to send commands from google assistant to adafruit_io feed. .. _IFTTT: http://www.ifttt.com/
+4. Register or login into IFTTT_ and create an applet to send commands from google assistant to adafruit_io feed.
+.. _IFTTT: http://www.ifttt.com/
 5. For controlling domoticz and sonoff devices, the adafruit.io command should match the syntaxes for the respective custom actions.
 
 
 Using the interpreter mode
 --------------------------
 
-NOTE: THIS MAKES USE OF GOOGLE CLOUD SPEECH API. FREE USAGE IS LIMITED TO 60MINS/MONTH. FOR MORE DETAILS ON THE USAGE LIMITS CHECK THIS LINK_ .. _LINK: https://cloud.google.com/speech-to-text/pricing
+NOTE: THIS MAKES USE OF GOOGLE CLOUD SPEECH API. FREE USAGE IS LIMITED TO 60MINS/MONTH. FOR MORE DETAILS ON THE USAGE LIMITS CHECK THIS LINK_
+
+.. _LINK: https://cloud.google.com/speech-to-text/pricing  
 1. Go to the projects page_ on your Google Cloud Console. .. _page: https://console.cloud.google.com/project
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
