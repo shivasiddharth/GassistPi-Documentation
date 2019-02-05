@@ -12,6 +12,5 @@ Documentation for GassistPi Project
 
    starting
    audioconfig
+   install
    rpigpios
-   
-
