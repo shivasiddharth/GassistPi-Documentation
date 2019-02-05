@@ -87,14 +87,12 @@ Controlling assistant/sending preset commands using IR remote
 
 1. Connect the IR Receiver according to the wiring diagram given below.
 
-.. note:: The diagram given is for GPIO 17, if you are using another GPIO, please make the suitable changes to the connection.   
-
-
 .. figure:: ../docs/_static/images/IRWiring.jpg
     :align: center
     :scale: 40%    
     :target: ../docs/_static/images/IRWiring.jpg  
     
+.. note:: The diagram given is for GPIO 17, if you are using another GPIO, please make the suitable changes to the connection. 
 
 2. Run the sample IR receiver script to get the codes for your desired buttons::  
 
@@ -117,7 +115,7 @@ Controlling assistant/sending preset commands using IR remote
        what is the time
        what can you do for me
 
-Video for reference:
+ **Video for reference:**
 
    .. raw:: html
 
