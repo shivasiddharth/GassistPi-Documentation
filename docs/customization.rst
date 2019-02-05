@@ -60,7 +60,7 @@ Using the interpreter mode
 
 To start the interpreter::
 
-   Hey Google, Start __Your_Desired_Language__ interpreter.
+   Hey Google, Start __Your-Desired-Language__ interpreter.
 To stop the interpreter::
 
    Hey Google, Stop interpreter.
@@ -126,7 +126,7 @@ Controlling assistant/sending preset commands using IR remote
    Eg::
 
        custom Play God's Plan from Youtube
-       custom Turn On __Domoticz device name__
+       custom Turn On __Domoticz-device-name__
        custom Play all the songs from Google Music
 
 5. If you are sending a command to be processed by google assistant, there is no need to prefix custom.
@@ -166,7 +166,7 @@ Sending commands/queries to Google Assistant over MQTT
    Eg::
 
        custom Play God's Plan from Youtube
-       custom Turn On __Domoticz device name__
+       custom Turn On __Domoticz-device-name__
        custom Play all the songs from Google Music
 
 6. If you are sending a command to be processed by google assistant, there is no need to prefix custom.
@@ -208,7 +208,7 @@ Streaming music from Deezer
 
 To play the playlists added to your Deezer account::
 
-      Hey Google, Play playlist _playlist-number_ from Deezer.
+      Hey Google, Play playlist __playlist-number__ from Deezer.
 
 Example::
 
@@ -232,7 +232,7 @@ Streaming music from gaana.com
 
 1. To play the playlists added in config.yaml file::
 
-      Hey Google, Play playlist _playlist-number_ from Gaana.com
+      Hey Google, Play playlist __playlist-number__ from Gaana.com
 
    Example::
 
@@ -240,7 +240,7 @@ Streaming music from gaana.com
 
 2. To play other playlists::
 
-      Hey Google, Play _user-playlist-query_ from Gaana.com
+      Hey Google, Play __user-playlist-query__ from Gaana.com
 
     Example::
 
@@ -261,7 +261,7 @@ Controlling Domoticz devices
 
 1. To On/Off/Toggle::
 
-      Hey Google, Turn On/Turn Off/Toggle  _Name of your light_
+      Hey Google, Turn On/Turn Off/Toggle  __Name of your light__
 
     Example::
 
@@ -269,18 +269,18 @@ Controlling Domoticz devices
 
 2. To Change Brightness (between 0 and 100)::
 
-      Hey Google, Set  _Name of your light_ brightness to _desired value_
+      Hey Google, Set  __Name of your light__ brightness to __desired value__
 
     Example::
 
       Hey Google, Set  Bedroom lamp brightness to 5
 
-3. To Change  Colour (refer the list of available colors given here_)::
+3. To Change  Colour (refer the list of available colors_)::
 
-   .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/colorlist.html#list-of-available-colors-for-home-automation-projects
-   
-      Hey Google, Set  _Name of your light_ color to _desired color_
-      Hey Google, Change  _Name of your light_ to _desired color_ color
+      Hey Google, Set  _Name of your light_ color to __desired color__
+      Hey Google, Change  __Name of your light__ to __desired color__ color
+
+   .. _colors: https://gassistpi-documentation.readthedocs.io/en/latest/colorlist.html#list-of-available-colors-for-home-automation-projects
 
    Example::
 
