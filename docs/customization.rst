@@ -263,7 +263,7 @@ Controlling Domoticz devices
 
       Hey Google, Turn On/Turn Off/Toggle  __Name of your light__
 
-    Example::
+   Example::
 
       Hey Google, Turn On Bedroom Lamp
 
@@ -271,7 +271,7 @@ Controlling Domoticz devices
 
       Hey Google, Set  __Name of your light__ brightness to __desired value__
 
-    Example::
+   Example::
 
       Hey Google, Set  Bedroom lamp brightness to 5
 
