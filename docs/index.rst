@@ -6,8 +6,6 @@
 Documentation for GassistPi Project
 ===================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 3
    :glob:
