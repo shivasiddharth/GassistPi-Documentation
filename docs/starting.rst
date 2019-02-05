@@ -2,6 +2,8 @@
 Before Starting
 ============
 
+**For Non-Issue Help and Interaction:** https://gitter.im/GassistPi/Lobby/  
+
 Supported Platforms
 -------------------
 
