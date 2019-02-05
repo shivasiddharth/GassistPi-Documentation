@@ -94,7 +94,7 @@ Controlling assistant/sending preset commands using IR remote
        :figwidth: 300px
        :target: ../_static/images/IRWiring.jpg
 
-2. Run the sample IR receiver script to get the codes for your desired buttons.:
+2. Run the sample IR receiver script to get the codes for your desired buttons::  
 
       python /home/${USER}/GassistPi/Extras/IR-Sensor.py
 
@@ -102,14 +102,14 @@ Controlling assistant/sending preset commands using IR remote
 
 4. If you want to execute the custom actions like Spotify, YouTube playback, Domoticz Control etc, prefix the word custom.
       Eg::
-      custom Play God's Plan from Youtube
-      custom Turn On __Domoticz device name__
-      custom Play all the songs from Google Music
+          custom Play God's Plan from Youtube
+          custom Turn On __Domoticz device name__
+          custom Play all the songs from Google Music
 
 5. If you are sending a command to be processed by google assistant, there is no need to prefix custom.
       Eg::
-      what is the time
-      what can you do for me
+          what is the time
+          what can you do for me
 
 Video for reference:
 
