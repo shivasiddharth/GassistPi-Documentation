@@ -36,8 +36,7 @@ Controlling Sonoff-Tasmota, Domoticz devices from Google Home
 Using the interpreter mode
 --------------------------
 
-**NOTE: THIS MAKES USE OF GOOGLE CLOUD SPEECH API. FREE USAGE IS LIMITED TO 60MINS/MONTH. FOR MORE DETAILS ON THE USAGE LIMITS CHECK THIS LINK**_
-
+NOTE: THIS MAKES USE OF GOOGLE CLOUD SPEECH API. FREE USAGE IS LIMITED TO 60MINS/MONTH. FOR MORE DETAILS ON THE USAGE LIMITS CHECK THIS LINK_
   .. _LINK: https://cloud.google.com/speech-to-text/pricing
 1. Go to the projects page on your Google Cloud Console-> https://console.cloud.google.com/project
 2. Select your project from the list.
@@ -49,11 +48,9 @@ Using the interpreter mode
 8. Enter the path to the Key along with the key name Eg: /home/pi/xxxx.json  in the config.yaml file in the "Google_Cloud_Speech_Credentials_Path" field under "Speechtotext" (you can use one key for Cloud Speech and Cloud Text to Speech, but should enter the same path seperately in config.yaml).
 
 **Command Syntax:**
-
 To start the interpreter::
 
    Hey Google, Start __Your_Desired_Language__ interpreter.
-
 To stop the interpreter::
 
    Hey Google, Stop interpreter.
