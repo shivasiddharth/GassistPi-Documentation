@@ -29,15 +29,14 @@ Controlling Sonoff-Tasmota, Domoticz devices from Google Home
 2. Create an acount and a feed in adafruit.io website.
 3. Enter those details in the config.yaml file.
 4. Register or login into IFTTT_ and create an applet to send commands from google assistant to adafruit_io feed.
-
   .. _IFTTT: http://www.ifttt.com/
-  5. For controlling domoticz and sonoff devices, the adafruit.io command should match the syntaxes for the respective custom actions.
+5. For controlling domoticz and sonoff devices, the adafruit.io command should match the syntaxes for the respective custom actions.
 
 
 Using the interpreter mode
 --------------------------
 
-**NOTE: THIS MAKES USE OF GOOGLE CLOUD SPEECH API. FREE USAGE IS LIMITED TO 60MINS/MONTH. FOR MORE DETAILS ON THE USAGE LIMITS CHECK THIS LINK_**
+**NOTE: THIS MAKES USE OF GOOGLE CLOUD SPEECH API. FREE USAGE IS LIMITED TO 60MINS/MONTH. FOR MORE DETAILS ON THE USAGE LIMITS CHECK THIS LINK**_
 
   .. _LINK: https://cloud.google.com/speech-to-text/pricing
 1. Go to the projects page on your Google Cloud Console-> https://console.cloud.google.com/project
@@ -49,7 +48,8 @@ Using the interpreter mode
 7. Copy the downloaded the JSON key and place it /home/pi/ directory **DO NOT RENAME**.
 8. Enter the path to the Key along with the key name Eg: /home/pi/xxxx.json  in the config.yaml file in the "Google_Cloud_Speech_Credentials_Path" field under "Speechtotext" (you can use one key for Cloud Speech and Cloud Text to Speech, but should enter the same path seperately in config.yaml).
 
-**Command Syntax:**     
+**Command Syntax:**
+
 To start the interpreter::
 
    Hey Google, Start __Your_Desired_Language__ interpreter.
