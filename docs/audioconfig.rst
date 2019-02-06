@@ -14,8 +14,7 @@ Choose the audio configuration according to your setup
 ------------------------------------------------------
 Non-Raspbian users install Alsa first::
 
-        sudo apt-get install alsa-utils
-        sudo apt-get install alsamixer
+        sudo apt-get install alsa-utils        
 
 
 USB DAC or USB Sound Card Users
