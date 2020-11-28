@@ -4,7 +4,7 @@ Features
 ========
 
 
-**All features are applicable to all boards, unless and otherwise mentioned.**     
+**All features are applicable to all boards, unless and otherwise mentioned.**
 
 1.   Headless auto start on boot.
 2.   Voice control of GPIOs without IFTTT, api.ai, Actions SDK (Only for Raspberry Pi Boards - non OSMC).
@@ -28,7 +28,7 @@ Features
 20.  Search recipes and get push message of ingredients and link to recipe.
 21.  Remote control of Magic Mirror.
 22.  Play your Spotify playlist.
-23.  Custom wakeword activation for all Pi boards.
+23.  Custom wakeword activation for all Pi boards using Snowboy and Picovoice-Porcupine.
 24.  Mute microphones to prevent listening to Ok-Google hotword (Only Raspberry Pi Boards - non OSMC).
 25.  Create custom conversations.
 26.  Control of lights added to Domoticz.
@@ -41,3 +41,5 @@ Features
 33.  Send Clickatell SMS messages.
 34.  CES 2019 Like Live Translator or Interpreter (Needs Cloud Speech).
 35.  Control Demoticz, Sonoff devices from other assistant devices.
+36.  Run custom script by voice.
+37.  Sending voice messages from phone to the Raspberry Pi.
