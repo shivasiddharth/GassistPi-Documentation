@@ -4,7 +4,7 @@ Guide to use the customizations/features
 
 
 
-Enabling or disabling custom actions
+Enabling or Disabling Custom Actions
 ------------------------------------
 
 Major custom actions have been provided with a control key or switch in the **config.yaml**.
@@ -12,7 +12,7 @@ Set it to **Enabled** to enable the custom actions and set it to **Disabled** to
 
 
 
-Using custom actions in Non-English languages
+Using Custom Actions in Non-English Languages
 ---------------------------------------------
 
 1. Languages supported: French, Italian, Spanish, Dutch, German and Swedish.
@@ -38,7 +38,7 @@ Controlling Sonoff-Tasmota, Domoticz devices from Google Home
 
 
 
-Using the interpreter mode
+Using the Interpreter Mode
 --------------------------
 
 .. note:: THIS MAKES USE OF GOOGLE CLOUD SPEECH API. FREE USAGE IS LIMITED TO 60MINS/MONTH. FOR MORE DETAILS ON THE USAGE LIMITS CHECK THIS_ LINK
@@ -61,13 +61,14 @@ Using the interpreter mode
 To start the interpreter::
 
    Hey Google, Start __Your-Desired-Language__ interpreter.
+
 To stop the interpreter::
 
    Hey Google, Stop interpreter.
 
 
 
-Using google cloud text to speech
+Using Google Cloud Text to Speech
 ---------------------------------
 
 .. note:: GOOGLE CLOUD TEXT TO SPEECH HAS A LIMITED USAGE ACCESS. ONCE THE QUOTA IS EXHAUSTED, THE PROJECT WILL AUTOMATICALLY SWITCH TO gTTS.
@@ -87,16 +88,16 @@ Using google cloud text to speech
 
 
 
-Adding YouTube Data API and generating API key
+Adding YouTube Data API and Generating API Key
 -----------------------------------------------
 1. Go to the projects page_ on your Google Cloud Console.
 
       .. _page: https://console.cloud.google.com/project
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
-4. Move your mouse pointer over "API and services" and choose "credentials".
+4. Move your mouse pointer over **API and services** and choose **Credentials**.
 5. Click on create credentials and select API Key and choose close. Make a note of the created API Key and enter it in the config.yaml script at the indicated location.
-6. "From the API and services" option, select library and in the search bar type youtube, select "YouTube Data API v3" API and click on "ENABLE".
+6. "From the API and services" option, select library and in the search bar type **youtube**, select **YouTube Data API v3** API and click on "ENABLE".
 7. In the API window, click on "All API Credentials" and in the drop down, make sure to have a tick (check mark) against the API Key that you just generated.
 
 .. note::
@@ -104,7 +105,23 @@ Adding YouTube Data API and generating API key
 
 
 
-Controlling assistant/sending preset commands using IR remote
+ Adding Custom Search API and Generating API Key
+ -----------------------------------------------
+ 1. Go to the projects page_ on your Google Cloud Console.
+
+       .. _page: https://console.cloud.google.com/project
+ 2. Select your project from the list.
+ 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
+ 4. Move your mouse pointer over **API and services** and choose **Credentials**.
+ 5. Click on create credentials and select API Key and choose close. Make a note of the created API Key and enter it in the config.yaml script at the indicated location.
+ 6. "From the API and services" option, select library and in the search bar type **search**, select **Custom Search API** API and click on "ENABLE".
+ 7. In the API window, click on "All API Credentials" and in the drop down, make sure to have a tick (check mark) against the API Key that you just generated.
+
+ .. note:: The same API key can be used for all the associated custom actions.
+
+.. note:: If a custom action uses both Custom Search and YouTube API, you need to enable both the APIs but only one API KEY needs to be generated.
+
+Controlling Assistant or Sending Preset Commands Using IR Remote
 ------------------------------------------------------
 
 1. Connect the IR Receiver according to the wiring diagram given below.
@@ -147,7 +164,7 @@ Controlling assistant/sending preset commands using IR remote
 
 
 
-Sending commands/queries to Google Assistant over MQTT
+Sending Commands or Queries to Google Assistant Over MQTT
 ------------------------------------------------------
 
 1. Set up your desired MQTT broker.
@@ -193,7 +210,7 @@ Sending commands/queries to Google Assistant over MQTT
 
 
 
-Streaming music from Deezer
+Streaming Music from Deezer
 ---------------------------
 
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
@@ -213,17 +230,22 @@ To play the playlists added to your Deezer account::
 
 Example::
 
-      Hey Google, Play playlist 1 from Deezer
+      Hey Google, Play __playlist 1__ from Deezer
 
 
 
-Streaming music from gaana.com
+Streaming Music from Gaana.com
 ------------------------------
 
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
-          This feature uses a YouTube Data API v3. Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
+          This feature uses both YouTube Data API v3 and Custom Search API.
+          Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
 
           .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
+
+          Click here_ for guidelines to add Custom Search API to the project and to generate the required key.
+
+          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key
 
 1. Add your playlists in the config.yaml under **Gaana: and Playlists:**.
 
@@ -237,7 +259,7 @@ Streaming music from gaana.com
 
    Example::
 
-      Hey Google, Play playlist 1 from Gaana.com
+      Hey Google, Play __playlist 1__ from Gaana.com
 
 2. To play other playlists::
 
@@ -245,11 +267,11 @@ Streaming music from gaana.com
 
     Example::
 
-      Hey Google, Play Bollywood top 50 from Gaana.com
+      Hey Google, Play __Bollywood top 50__ from Gaana.com
 
 
 
-Controlling Domoticz devices
+Controlling Domoticz Devices
 ----------------------------
 
 .. note:: As of today, you can control lights and switches only, more controls will be added in the future.
@@ -266,7 +288,7 @@ Controlling Domoticz devices
 
    Example::
 
-      Hey Google, Turn On Bedroom Lamp
+      Hey Google, Turn On __Bedroom Lamp__
 
 2. To Change Brightness (between 0 and 100)::
 
@@ -274,7 +296,7 @@ Controlling Domoticz devices
 
    Example::
 
-      Hey Google, Set  Bedroom lamp brightness to 5
+      Hey Google, Set __Bedroom lamp__ brightness to __5__
 
 3. To Change  Colour (refer the list of available colors_)::
 
@@ -285,8 +307,8 @@ Controlling Domoticz devices
 
    Example::
 
-      Hey Google, Set  Bedroom lamp color to red
-      Hey Google, Change  Bedroom lamp to red color
+      Hey Google, Set __Bedroom lamp__ color to __red__
+      Hey Google, Change __Bedroom lamp__ to __red__ color
 
 
 
@@ -308,7 +330,7 @@ Custom Wakeword Activation
 3. You have a choice between Snowboy and Picovoice for the custom wakeword engine.
 4. For Snowboy, change **"Wakeword_Engine"** to **Snowboy** and for Picovoice, change **"Wakeword_Engine"** to **Picovoice**.
 5. For changes to take effect, you need to restart the assistant. Changing status while an instance of assistant is already running will not cause any change.
-6. Create your custom snowboy model here. Add the models to **/GassistPi/src/resources/snowboy_models** directory.
+6. Create your custom snowboy model here_. Add the models to **/GassistPi/src/resources/snowboy_models** directory.
 
   .. _here: https://snowboy.kitt.ai
 
@@ -318,3 +340,62 @@ Custom Wakeword Activation
 .. note:: If you turn off the default **Ok Google** wakeword/hotword, everytime you invoke the assistant using the custom wakeword, you will get a prompt for the Mic being turned Off and On.
 
 9. Users using pushbutton.py or Pi Zero users have an option between using custom wakeword and GPIO trigerring. If custom wakeword is enabled, then GPIO trigger will not work. To enable GPIO triggering, set custom wakeword to 'Disabled'.
+
+
+
+Playing Spotify Playlist
+----------------------------
+
+.. note:: Spotify API currently only supports playback in a web browser, but DRM content is being blocked in the Raspberry Pi. As a roundabout approach, I have programmed the assistant to get the playlist details using Spotipy API and then fetch those tracks from YouTube. This custom program has a better accuracy than spotify playlist playback using mpsyt.
+          This feature uses a YouTube Data API v3. Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
+
+          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
+
+1. Click here_ and register for a spotify developer account, if you already don't have one.
+
+          .. _here: https://developer.spotify.com/dashboard/login
+
+2. In the developer's dashboard, choose **CREATE A CLIENT ID**. In the pop-up window provide the requested details.
+3. Click on the new app created and copy the **CLIENT ID** and **CLIENT SECRET**. Paste it in the config.yaml file in the indicated space.
+4. Access spotify here_ and copy the username to be entered in config.yaml.
+
+          .. _here: https://www.spotify.com/account/overview/
+
+**Command Syntax:**
+To play your playlist::
+
+   Hey Google, Play __user-playlist-query__  from Spotify
+
+ Example::
+
+   Hey Google, Play __Workout playlist__ from Spotify
+
+   Hey Google, Play __Top Dance Numbers__ from Spotify
+
+.. note:: If your playlist name does not have the word **playlist** do not use that in the query.
+
+
+
+Tracking Kickstarter Campaigns
+--------------------------------
+A custom Google search engine for **Kickstarter_** has been used. This requires an API to be added to your existing project.
+
+         .. _Kickstarter: https://www.kickstarter.com/
+
+Click here_ for guidelines to add Custom Search API to the project and to generate the required key.
+
+.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key
+
+**Command Syntax:**
+To track a kickstarter campaign::
+
+   Hey Google, Track __your-desired-campaign__ Kickstarter campaign
+
+   Hey Google, What is the status of __your-desired-campaign__ Kickstarter campaign
+
+
+ Example::
+
+   Hey Google, Track __Mycroft 2__ Kickstarter campaign
+
+   Hey Google, What is the status of __Mycroft 2__ Kickstarter campaign
