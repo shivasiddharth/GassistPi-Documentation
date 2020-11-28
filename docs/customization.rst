@@ -60,7 +60,7 @@ Using the Interpreter Mode
 
 To start the interpreter::
 
-   Hey Google, Start __Your-Desired-Language__ interpreter.
+```Hey Google, Start *Your-Desired-Language* interpreter.```   
 
 To stop the interpreter::
 
@@ -102,7 +102,7 @@ Adding YouTube Data API and Generating API Key
 
 .. note::
  The same API key can be used for all the associated custom actions.
- 
+
 
 
  Adding Custom Search API and Generating API Key
@@ -144,7 +144,7 @@ Controlling Assistant or Sending Preset Commands Using IR Remote
    Eg::
 
        custom Play God's Plan from Youtube
-       custom Turn On __Domoticz-device-name__
+       custom Turn On _Domoticz-device-name__
        custom Play all the songs from Google Music
 
 5. If you are sending a command to be processed by google assistant, there is no need to prefix custom.
