@@ -14,7 +14,7 @@ Choose the audio configuration according to your setup
 ------------------------------------------------------
 Non-Raspbian users install Alsa first::
 
-        sudo apt-get install alsa-utils        
+        sudo apt-get install alsa-utils
 
 
 USB DAC or USB Sound Card Users
@@ -42,6 +42,8 @@ Run the following in the terminal::
      sudo ./GassistPi/audio-drivers/AIY-HAT/scripts/install-alsa-config.sh
      speaker-test
 
+.. note::
+Pi users on May 2020 or a later release, who want to setup HDMI or AUDIO Jack as the output device, replace the folders under the audio-drivers directory with the folders from the /Extras/May2020 directory. Copy the USB-MIC-HDMI and USB-MIC-JACK folders from the /Extras/May2020 directory and paste them in the audio-drivers directory and then proceed with the instructions below.
 
 USB Mic and HDMI Users
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -84,7 +86,21 @@ Run the following in the terminal::
        speaker-test
 
 
-Respeaker HAT Users
+Respeaker 2 Mic HAT Users
+~~~~~~~~~~~~~~~~~~~
+Run the following in the terminal::
+
+       sudo apt-get update
+       sudo apt-get purge pulseaudio
+       cd /home/${USER}/
+       git clone https://github.com/shivasiddharth/seeed-voicecard
+       cd ./seeed-voicecard/
+       sudo ./install.sh
+       sudo reboot
+       speaker-test
+
+
+Other Respeaker Mic HAT Users
 ~~~~~~~~~~~~~~~~~~~
 Run the following in the terminal::
 

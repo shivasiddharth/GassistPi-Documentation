@@ -6,10 +6,12 @@ Before Starting
 
 Supported Platforms
 -------------------
+.. note::
+ - Do not use the prebuilt AIY Image.        
 
-Any single board computer or machine running one of the the following OS:    
+Any single board computer or machine running one of the following OS:
  - Armbian Stretch
- - Raspbian Stretch
+ - Raspbian Stretch and Buster
  - OSMC Stretch
  - Ubuntu Bionic
 

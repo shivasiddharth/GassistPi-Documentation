@@ -14,12 +14,14 @@ Installing Google Assistant
 .. raw:: html
 
     <div style="text-align: center; margin-bottom: 2em;">
-    <iframe width="100%" height="350" src="https://www.youtube.com/embed/dMNtmp8z52M?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/pC4WLy45Zok?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
 
-2. Place the credentials.json file in/home/${USER}/ directory **DO NOT RENAME**
+2. Place the credentials.json file in/home/${USER}/ directory.
 
+.. note::
+ Do not rename the credentials file.
 
 3. Use the one-line installer for installing Google Assistant.
 
@@ -44,8 +46,7 @@ Installing Google Assistant
 5. Copy the authorization code from browser onto the terminal and press enter.
 
 
-6. After successful authentication, the Google Assistant Demo test will automatically start.
-   At the start, the volume might be low, the assistant volume is independent of the Pi volume, increase the volume by using **Hey Google, Set volume to maximum** command.
+6. Assistant installation is done now.
 
-
-7. After verifying the working of assistant, close and exit the terminal.
+.. note::
+ At the first start of the assistant, the volume may be low. Issue **Hey Google, Set volume to maximum** to set the volume to maximum.
