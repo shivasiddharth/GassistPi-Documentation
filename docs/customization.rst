@@ -118,6 +118,8 @@ Adding YouTube Data API and Generating API Key
 
 .. note:: If a custom action uses both Custom Search and YouTube API, you need to enable both the APIs but only one API KEY needs to be generated.
 
+
+
 Controlling Assistant or Sending Preset Commands Using IR Remote
 ------------------------------------------------------
 
