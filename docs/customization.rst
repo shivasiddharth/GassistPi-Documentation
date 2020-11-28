@@ -58,13 +58,13 @@ Using the Interpreter Mode
 
 **Command Syntax:**
 
-To start the interpreter::
+To start the interpreter:
 
 ```Hey Google, Start *Your-Desired-Language* interpreter.```
 
 To stop the interpreter::
 
-   Hey Google, Stop interpreter.     
+   Hey Google, Stop interpreter.
 
 
 
