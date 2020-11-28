@@ -103,7 +103,7 @@ Adding YouTube Data API and Generating API Key
 
 
  Adding Custom Search API and Generating API Key
- -----------------------------------------------
+ -----------------------------------------------    
  1. Go to the projects page_ on your Google Cloud Console.
 
        .. _page: https://console.cloud.google.com/project
