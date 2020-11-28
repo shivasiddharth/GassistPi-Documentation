@@ -42,7 +42,9 @@ Run the following in the terminal::
      sudo ./GassistPi/audio-drivers/AIY-HAT/scripts/install-alsa-config.sh
      speaker-test
 
-.. note:: Pi users on May 2020 or a later release, who want to setup HDMI or AUDIO Jack as the output device, replace the folders under the audio-drivers directory with the folders from the /Extras/May2020 directory. Copy the USB-MIC-HDMI and USB-MIC-JACK folders from the /Extras/May2020 directory and paste them in the audio-drivers directory and then proceed with the instructions below.
+.. note::
+ Pi users on May 2020 or a later release:
+ - Copy the USB-MIC-HDMI and USB-MIC-JACK folders from the /Extras/May2020 directory and paste them in the audio-drivers directory and then proceed with the instructions below.
 
 USB Mic and HDMI Users
 ~~~~~~~~~~~~~~~~~~~~~~
