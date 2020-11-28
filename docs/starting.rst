@@ -18,7 +18,7 @@ Getting Started
 ----------------
 
 .. note::
- **${USER}** will automatically take your username. No need to change that. Just copy pasting the following commands on terminal will work.
+ **${USER}** will automatically take your username. No need to change that. Just copy pasting the commands on terminal will work.
 
 Install git and clone the project::
 

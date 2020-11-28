@@ -82,7 +82,7 @@ Using google cloud text to speech
 6. In the "Add credentials to your project" window, in step-1 under "Which API are you using?" drop down choose "Cloud Text-to-Speech API" and down below choose "No, I’m not using them". Then click on "What credentials do I need?"
 7. In step-2 give your service account a name and on the right in the "Role" drop down choose Project-->Owner and under "Key Type" select "JSON" and click "Continue".
 8. Copy the downloaded key and place it /home/pi/ directory DO NOT RENAME.
-9. Enter the path to the Key along with the key name Eg: /home/pi/xxxx.json  in the config.yaml file in the "Google_Cloud_TTS_Credentials_Path" field.
+9. Enter the path to the Key along with the key name Eg: /home/pi/xxxx.json  in the config.yaml file in the **Google_Cloud_TTS_Credentials_Path** field.
    You can use one key for Cloud Speech and Cloud Text to Speech, but should enter the same path seperately in config.yaml
 
 
@@ -287,3 +287,34 @@ Controlling Domoticz devices
 
       Hey Google, Set  Bedroom lamp color to red
       Hey Google, Change  Bedroom lamp to red color
+
+
+
+Custom Conversations
+----------------------------
+
+1. Customize the assistant's reply to a specific question.
+2. Add the list of questions and answers in config.yaml under the **Conversation**: option.
+3. **There must be only one question, but corresponding answers can be as many**.
+4. Sample questions and answers has been provided, please follow the same pattern.
+
+
+
+Custom Wakeword Activation
+----------------------------
+
+1. You can choose to either Enable or Disable the custom wakeword activation in the config.yaml file.
+2. In the config.yaml file, under Wakewords, change the **"Custom_Wakeword"** to **'Enabled'** if you want to use the custom wakeword or set it to 'Disabled' if you dont want to use the custom wakeword option.
+3. You have a choice between Snowboy and Picovoice for the custom wakeword engine.
+4. For Snowboy, change **"Wakeword_Engine"** to **Snowboy** and for Picovoice, change **"Wakeword_Engine"** to **Picovoice**.
+5. For changes to take effect, you need to restart the assistant. Changing status while an instance of assistant is already running will not cause any change.
+6. Create your custom snowboy model here. Add the models to **/GassistPi/src/resources/snowboy_models** directory.
+
+  .. _here: https://snowboy.kitt.ai
+
+7. Sample Snowboy and Picovoice models have been provided and placed in the /GassistPi/src/resources/ folder. Set your desired models by setting their paths in the config.yaml file.
+8. To disable the default **"Ok Google"** hotword, set the Ok_Google option to **"Disabled"**.
+
+.. note:: If you turn off the default **Ok Google** wakeword/hotword, everytime you invoke the assistant using the custom wakeword, you will get a prompt for the Mic being turned Off and On.
+
+9. Users using pushbutton.py or Pi Zero users have an option between using custom wakeword and GPIO trigerring. If custom wakeword is enabled, then GPIO trigger will not work. To enable GPIO triggering, set custom wakeword to 'Disabled'.
