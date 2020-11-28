@@ -48,5 +48,4 @@ Installing Google Assistant
 
 6. Assistant installation is done now.
 
-.. note::
- At the first start of the assistant, the volume may be low. Issue **Hey Google, Set volume to maximum** to set the volume to maximum.
+.. note:: At the first start of the assistant, the volume may be low. Issue **Hey Google, Set volume to maximum** to set the volume to maximum.

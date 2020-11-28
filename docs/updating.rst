@@ -19,5 +19,4 @@ Updating the project
 
 6. If the Project is updated, reconfigure the **config.yaml** file.
 
-.. note::
- The update script will make a backup of your existing project folder before updating eg. GassistPi.bak-xxxx-xx-xx**
+.. note:: The update script will make a backup of your existing project folder before updating eg. GassistPi.bak-xxxx-xx-xx**

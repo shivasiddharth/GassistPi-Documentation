@@ -6,8 +6,7 @@ Before Starting
 
 Supported Platforms
 -------------------
-.. note::
- - Do not use the prebuilt AIY Image.        
+.. note:: Do not use the prebuilt AIY Image.        
 
 Any single board computer or machine running one of the following OS:
  - Armbian Stretch
