@@ -114,7 +114,7 @@ Adding YouTube Data API and Generating API Key
  6. "From the API and services" option, select library and in the search bar type **search**, select **Custom Search API** API and click on "ENABLE".
  7. In the API window, click on "All API Credentials" and in the drop down, make sure to have a tick (check mark) against the API Key that you just generated.
 
- .. note:: The same API key can be used for all the associated custom actions.
+.. note:: The same API key can be used for all the associated custom actions.
 
 .. note:: If a custom action uses both Custom Search and YouTube API, you need to enable both the APIs but only one API KEY needs to be generated.
 
