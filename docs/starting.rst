@@ -6,7 +6,7 @@ Before Starting
 
 Supported Platforms
 -------------------
-.. note:: Do not use the prebuilt AIY Image.        
+.. note:: Do not use the prebuilt AIY Image.
 
 Any single board computer or machine running one of the following OS:
  - Armbian Stretch
@@ -14,9 +14,11 @@ Any single board computer or machine running one of the following OS:
  - OSMC Stretch
  - Ubuntu Bionic
 
-
 Getting Started
 ----------------
+
+.. note::
+ **${USER}** will automatically take your username. No need to change that. Just copy pasting the following commands on terminal will work.
 
 Install git and clone the project::
 
