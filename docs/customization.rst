@@ -58,9 +58,9 @@ Using the Interpreter Mode
 
 **Command Syntax:**
 
-To start the interpreter:
+To start the interpreter::
 
-```Hey Google, Start *Your-Desired-Language* interpreter.```
+   Hey Google, Start __Your-Desired-Language__ interpreter.
 
 To stop the interpreter::
 
@@ -99,9 +99,6 @@ Adding YouTube Data API and Generating API Key
 5. Click on create credentials and select API Key and choose close. Make a note of the created API Key and enter it in the config.yaml script at the indicated location.
 6. "From the API and services" option, select library and in the search bar type **youtube**, select **YouTube Data API v3** API and click on "ENABLE".
 7. In the API window, click on "All API Credentials" and in the drop down, make sure to have a tick (check mark) against the API Key that you just generated.
-
-.. note::
- The same API key can be used for all the associated custom actions.
 
 
 
