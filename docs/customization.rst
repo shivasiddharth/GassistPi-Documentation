@@ -88,10 +88,22 @@ Using Google Cloud Text to Speech
 
 
 
+Adding Custom Search API and Generating API Key
+-----------------------------------------------
+1. Go to the projects page_ on your Google Cloud Console.
+      .. _page: https://console.cloud.google.com/project
+2. Select your project from the list.
+3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
+4. Move your mouse pointer over **API and services** and choose **Credentials**.
+5. Click on create credentials and select API Key and choose close. Make a note of the created API Key and enter it in the config.yaml script at the indicated location.
+6. "From the API and services" option, select library and in the search bar type **search**, select **Custom Search API** API and click on "ENABLE".
+7. In the API window, click on "All API Credentials" and in the drop down, make sure to have a tick (check mark) against the API Key that you just generated.
+
+
+
 Adding YouTube Data API and Generating API Key
 -----------------------------------------------
 1. Go to the projects page_ on your Google Cloud Console.
-
       .. _page: https://console.cloud.google.com/project
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
@@ -102,21 +114,10 @@ Adding YouTube Data API and Generating API Key
 
 
 
- Adding Custom Search API and Generating API Key         
- -----------------------------------------------
- 1. Go to the projects page_ on your Google Cloud Console.
-
-       .. _page: https://console.cloud.google.com/project
- 2. Select your project from the list.
- 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
- 4. Move your mouse pointer over **API and services** and choose **Credentials**.
- 5. Click on create credentials and select API Key and choose close. Make a note of the created API Key and enter it in the config.yaml script at the indicated location.
- 6. "From the API and services" option, select library and in the search bar type **search**, select **Custom Search API** API and click on "ENABLE".
- 7. In the API window, click on "All API Credentials" and in the drop down, make sure to have a tick (check mark) against the API Key that you just generated.
-
 .. note:: If a custom action uses both Custom Search and YouTube API, you need to enable both the APIs but only one API KEY needs to be generated.
 
 .. note:: The same API key can be used for all the associated custom actions.
+
 
 
 Controlling Assistant or Sending Preset Commands Using IR Remote
