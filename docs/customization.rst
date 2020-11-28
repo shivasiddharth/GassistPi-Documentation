@@ -60,11 +60,11 @@ Using the Interpreter Mode
 
 To start the interpreter::
 
-```Hey Google, Start *Your-Desired-Language* interpreter.```   
+```Hey Google, Start *Your-Desired-Language* interpreter.```
 
 To stop the interpreter::
 
-   Hey Google, Stop interpreter.
+   Hey Google, Stop interpreter.     
 
 
 
