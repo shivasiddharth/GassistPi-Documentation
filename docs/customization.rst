@@ -383,9 +383,7 @@ Emulated Philips Hue Control
 
 **Command Syntax:**
 
-1. To turn On/Off lights:
-
-   .. code-block:: bash
+1. To turn On/Off lights::
 
      Hey Google, Turn __Hue-Light-Name__ On/Off
 
