@@ -343,15 +343,14 @@ Playing Spotify Playlist
 
 .. note:: Spotify API currently only supports playback in a web browser, but DRM content is being blocked in the Raspberry Pi. As a roundabout approach, I have programmed the assistant to get the playlist details using Spotipy API and then fetch those tracks from YouTube. This custom program has a better accuracy than spotify playlist playback using mpsyt.
           This feature uses a YouTube Data API v3. Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
-
-          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
+.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
 
 1. Click here_ and register for a spotify developer account, if you already don't have one.
 .. _here: https://developer.spotify.com/dashboard/login
 2. In the developer's dashboard, choose **CREATE A CLIENT ID**. In the pop-up window provide the requested details.
 3. Click on the new app created and copy the **CLIENT ID** and **CLIENT SECRET**. Paste it in the config.yaml file in the indicated space.
 4. Access spotify here_ and copy the username to be entered in config.yaml.
-.. _here: https://www.spotify.com/account/overview/
+.. _here: https://www.spotify.com/account/overview/  
 
 **Command Syntax:**
 To play your playlist::
@@ -374,7 +373,7 @@ A custom Google search engine for Kickstarter_ has been used. This requires an A
 .. _Kickstarter: https://www.kickstarter.com/
 
 Click here_ for guidelines to add Custom Search API to the project and to generate the required key.
-.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key  
+.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key
 
 **Command Syntax:**
 To track a kickstarter campaign::
