@@ -353,8 +353,8 @@ A custom Google search engine for `Kickstarter <https://www.kickstarter.com/>`_ 
 
 Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key>`_ for guidelines to add Custom Search API to the project and to generate the required key.
 
-**Command Syntax:**     
-To track a kickstarter campaign::
+**Command Syntax:**
+To track a kickstarter campaign::   
 
    Hey Google, Track __your-desired-campaign__ Kickstarter campaign
    Hey Google, What is the status of __your-desired-campaign__ Kickstarter campaign
