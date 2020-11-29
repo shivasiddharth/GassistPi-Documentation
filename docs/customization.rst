@@ -505,17 +505,17 @@ Voice Control of GPIOs, Servo Motor and Safe Shutdown of Pi
 
 **Command Syntax:**
 
- 1. To turn device connected to GPIO on/off::
+1. To turn device connected to GPIO on/off::
 
-     Hey Google, **Trigger** turn __Device-Name__ on/off
+    Hey Google, **Trigger** turn __Device-Name__ on/off
 
- 2. To turn servo motor (example by 90 degrees)::
+2. To turn servo motor (example by 90 degrees)::
 
-     Hey Google, **Trigger** **servo** 90
+    Hey Google, **Trigger** **servo** 90
 
- 3. To power off the Pi::
+3. To power off the Pi::
 
-     Hey Google, **Trigger Shutdown**
+    Hey Google, **Trigger Shutdown**
 
 **Check out the demo in the video below:**
 
@@ -593,15 +593,15 @@ Casting YouTube Videos to Chromecast and Chromecast Control
 
 **Command Syntax:**
 
- 1. To Play Video on Chromecast::
+1. To Play Video on Chromecast::
 
     Hey Google, Play __Desired-Video__ on Chromecast
 
- 2. To Stop Playback::
+2. To Stop Playback::
 
     Hey Google, Stop Chromecast
 
- 3. To Change volume::
+3. To Change volume::
 
     Hey Google, Chromecast Volume Up/Down
 
