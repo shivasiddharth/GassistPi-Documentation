@@ -91,7 +91,7 @@ Using Google Cloud Text to Speech
 Adding Custom Search API and Generating API Key
 -----------------------------------------------
 1. Go to the projects page_ on your Google Cloud Console.
-      .. _page: https://console.cloud.google.com/project
+.. _page: https://console.cloud.google.com/project
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
 4. Move your mouse pointer over **API and services** and choose **Credentials**.
@@ -104,7 +104,7 @@ Adding Custom Search API and Generating API Key
 Adding YouTube Data API and Generating API Key
 -----------------------------------------------
 1. Go to the projects page_ on your Google Cloud Console.
-      .. _page: https://console.cloud.google.com/project
+.. _page: https://console.cloud.google.com/project
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
 4. Move your mouse pointer over **API and services** and choose **Credentials**.
