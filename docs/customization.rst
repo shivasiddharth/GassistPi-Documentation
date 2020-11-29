@@ -378,7 +378,7 @@ Emulated Philips Hue Control
      ``
         if os.path.isfile('/opt/hue-emulator/config.json'):
            with open('/opt/hue-emulator/config.json', 'r') as config:
-     ``         
+     ``              
 
 **Command Syntax:**
 
