@@ -387,15 +387,11 @@ Emulated Philips Hue Control
 
      Hey Google, Turn __Hue-Light-Name__ On/Off
 
-2. To change light color:
-
-   .. code-block:: bash
+2. To change light color::
 
      Hey Google, Change __Hue-Light-Name__ colour to __Required-Colour__
 
-3. To change brightness:
-
-   .. code-block:: bash
+3. To change brightness::
 
      Hey Google, Change __Hue-Light-Name brightness__ to __Required-Brightness-Level__
 
