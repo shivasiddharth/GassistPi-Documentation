@@ -333,7 +333,7 @@ Playing Spotify Playlist
 3. Click on the new app created and copy the **CLIENT ID** and **CLIENT SECRET**. Paste it in the config.yaml file in the indicated space.
 4. Access spotify `here <https://www.spotify.com/account/overview/>`_ and copy the username to be entered in config.yaml.
 
-**Command Syntax:**
+**Command Syntax:**    
 To play your playlist::
 
    Hey Google, Play __user-playlist-query__  from Spotify
@@ -361,5 +361,5 @@ To track a kickstarter campaign::
 
 Example::
 
-   Hey Google, Track __Mycroft 2__ Kickstarter campaign   
+   Hey Google, Track __Mycroft 2__ Kickstarter campaign
    Hey Google, What is the status of __Mycroft 2__ Kickstarter campaign
