@@ -371,7 +371,7 @@ Example::
 Emulated Philips Hue Control
 -----------------------------
 
-1. Credits for the `Emulated Hue <https://github.com/diyhue/diyHue>'_ to `Marius Motea <https://github.com/mariusmotea>`_.
+1. Credits for the `Emulated Hue <https://github.com/diyhue/diyHue>`_ to `Marius Motea <https://github.com/mariusmotea>`_.
 2. Follow the guidelines given in the `diyHue's documents <https://diyhue.readthedocs.io/en/latest/>`_ to setup the Emulated Hue Service.
 3. Download sketches for your NodeMCU/Wemos/ESP Devices from `here <https://github.com/diyhue/Lights>`_.
 4. If the Hue config file is not in the default location, change the path to the Hue config file in the following lines of main.py script.
@@ -389,7 +389,7 @@ Emulated Philips Hue Control
 
    Hey Google, Change __Hue-Light-Name__ colour to __Required-Colour__
 
-3. To change brightness::    
+3. To change brightness::
 
    Hey Google, Change __Hue-Light-Name brightness__ to __Required-Brightness-Level__
 
@@ -398,7 +398,7 @@ Emulated Philips Hue Control
 Sending Voice Messages from Pi to Phone/Tablet
 ----------------------------------------------
 
-..note::  For pushing voice messages, the GassistPi uses Pushbullet API.
+.. note::  For pushing voice messages, the GassistPi uses Pushbullet API.
 
 1. Download and install pushbullet app on your tablet/mobile device.
 2. Visit www.pushbullet.com register for new account or sign in with your existing account.
@@ -432,7 +432,7 @@ To send sms::
 Get Recipe Messaged to Mobile/Tablet
 --------------------------------------
 
-..note:: This feature uses the Pushbullet API for sending the recipes. Please first setup the Pushbullet feature as given here.
+.. note:: This feature uses the Pushbullet API for sending the recipes. Please first setup the Pushbullet feature as given here.
 
 GassistPi uses `Edamam <https://www.edamam.com>'_ for getting recipe details/info. To use this feature:
   1. Click `here <https://developer.edamam.com/edamam-recipe-api>`_ to visit the developers' porta for Edamam.
@@ -440,7 +440,7 @@ GassistPi uses `Edamam <https://www.edamam.com>'_ for getting recipe details/inf
   3. In the Menubar at the top, Click on Dashboard-->Applications-->Create a new applicatiuon-->Recipe Search API and then create a new application.
   4. Copy the application id and application key and paste it in the actions.py script under the getrecipe function.
 
-..note:: While copying the application key, do not copy the "—"
+.. note:: While copying the application key, do not copy the "—"
 
 **Command Syntax:**
 
@@ -476,7 +476,7 @@ Control Magic Mirror by Voice
 Indicators for Google Assistant's Listening and Speaking Events
 ---------------------------------------------------------------
 
-..note::  Default GPIOs for the indicators are BCM GPIO05 and GPIO06. If you want to change the pins, change it in the config.yaml file.
+.. note::  Default GPIOs for the indicators are BCM GPIO05 and GPIO06. If you want to change the pins, change it in the config.yaml file.
 
 Connect LEDs with colours of your choice to GPIO05 for Listening and GPIO06 for Speaking Events.
 
@@ -485,7 +485,7 @@ Connect LEDs with colours of your choice to GPIO05 for Listening and GPIO06 for 
 Pushbutton to Stop Music/Radio Playback and for Muting the Microphone
 ---------------------------------------------------------------------
 
-..note::  Default GPIO for the pushbutton is BCM GPIO23. If you want to change the pins, change it in the config.yaml file.
+.. note::  Default GPIO for the pushbutton is BCM GPIO23. If you want to change the pins, change it in the config.yaml file.
 
 Connect a pushbutton between GPIO23 and Ground. Single press mutes microphone and double press stops music streaming.
 
@@ -494,7 +494,7 @@ Connect a pushbutton between GPIO23 and Ground. Single press mutes microphone an
 Voice Control of GPIOs, Servo Motor and Safe Shutdown of Pi
 -----------------------------------------------------------
 
-..note::
+.. note::
  - This feature uses a combination of two keywords to prevent false positives. These can be changed in the keywords.yaml file.
  - The default main keyword is **trigger**.
  - The default keyword for servo motor control is **servo**.
@@ -553,7 +553,7 @@ Controlling NodeMCU Running Sonoff-Tasmota Firmware
 
 1. Download the Tasmota firmware from this `link <https://mega.nz/#!Dwx0lDYL!CK_QYoR9GvBhqdEmVs98ac45TjTjPIQyeaezYT4jfE0>`_.
 
-..note:: This is an old firmware. You can upgrade to the latest firmware from this one.
+.. note:: This is an old firmware. You can upgrade to the latest firmware from this one.
 
 2. Upload the firmware properly. You can use this video for reference.
    .. raw:: html
@@ -574,7 +574,7 @@ To turn the Tasmota device on/off::
 
 Casting YouTube Videos to Chromecast and Chromecast Control
 -----------------------------------------------------------
-..note::
+.. note::
  - This feature uses a YouTube Data API v3. Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key>`_ for guidelines to add YouTube Data API to the project and to generate the required key.
  - The default keyword is **Chromecast**. You can change that in the main.py script at  ``# if 'chromecast'.lower() in str(usrcmd).lower():``.
  - The IP address of Chromecast can be set in the actions.py file at:
