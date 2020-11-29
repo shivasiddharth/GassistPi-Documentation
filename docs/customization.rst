@@ -16,11 +16,8 @@ Using Custom Actions in Non-English Languages
 ---------------------------------------------
 
 1. Languages supported: French, Italian, Spanish, Dutch, German and Swedish.
-
 2. In the **config.yaml** file, under the **Languages and Choice** option set your desired language.
-
 3. Use the Translated versions of the English syntaxes given for all the custom actions.
-
 4. You can change the keywords/trigger words for the custom actions in the keywords file.
 
 
@@ -31,9 +28,7 @@ Controlling Sonoff-Tasmota, Domoticz devices from Google Home
 1. This has been implemented using Adafruit_IO.
 2. Create an acount and a feed in adafruit.io website.
 3. Enter those details in the config.yaml file.
-4. Register or login into IFTTT_ and create an applet to send commands from google assistant to adafruit_io feed.
-
-   .. _IFTTT: http://www.ifttt.com/
+4. Register or login into `IFTTT <http://www.ifttt.com/>`_ and create an applet to send commands from google assistant to adafruit_io feed.
 5. For controlling domoticz and sonoff devices, the adafruit.io command should match the syntaxes for the respective custom actions.
 
 
@@ -41,12 +36,9 @@ Controlling Sonoff-Tasmota, Domoticz devices from Google Home
 Using the Interpreter Mode
 --------------------------
 
-.. note:: THIS MAKES USE OF GOOGLE CLOUD SPEECH API. FREE USAGE IS LIMITED TO 60MINS/MONTH. FOR MORE DETAILS ON THE USAGE LIMITS CHECK THIS_ LINK
+.. note:: This uses GOOGLE CLOUD SPEECH API. Free usage is limited to `60MINS/MONTH <https://cloud.google.com/speech-to-text/pricing>`_.
 
-.. _THIS: https://cloud.google.com/speech-to-text/pricing
-1. Go to the projects page_ on your Google Cloud Console.
-
-   .. _page: https://console.cloud.google.com/project
+1. Go to the projects `page <https://console.cloud.google.com/project>`_ on your Google Cloud Console.
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
 4. From the **API and services** option, select library and in the search bar type **speech**, select **Cloud Speech API** and click on "ENABLE".
@@ -71,11 +63,9 @@ To stop the interpreter::
 Using Google Cloud Text to Speech
 ---------------------------------
 
-.. note:: GOOGLE CLOUD TEXT TO SPEECH HAS A LIMITED USAGE ACCESS. ONCE THE QUOTA IS EXHAUSTED, THE PROJECT WILL AUTOMATICALLY SWITCH TO gTTS.
+.. note:: GOOGLE CLOUD TEXT TO SPEECH API has limited free access. Once the quota is exceeded, the program will automatically switch to gTTS.
 
-1. Go to the projects page_ on your Google Cloud Console.
-
-   .. _page: https://console.cloud.google.com/project
+1. Go to the projects `page <https://console.cloud.google.com/project>`_ on your Google Cloud Console.
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
 4. "From the API and services" option, select library and in the search bar type text, select "Cloud Text-to-Speech API" and click on "ENABLE".
@@ -84,15 +74,14 @@ Using Google Cloud Text to Speech
 7. In step-2 give your service account a name and on the right in the "Role" drop down choose Project-->Owner and under "Key Type" select "JSON" and click "Continue".
 8. Copy the downloaded key and place it /home/pi/ directory DO NOT RENAME.
 9. Enter the path to the Key along with the key name Eg: /home/pi/xxxx.json  in the config.yaml file in the **Google_Cloud_TTS_Credentials_Path** field.
-   You can use one key for Cloud Speech and Cloud Text to Speech, but should enter the same path seperately in config.yaml
+
+.. note:: You can use one key for Cloud Speech and Cloud Text to Speech, but should enter the same path seperately in config.yaml
 
 
 
 Adding Custom Search API and Generating API Key
 -----------------------------------------------
-1. Go to the projects page_ on your Google Cloud Console.
-
-   .. _page: https://console.cloud.google.com/project
+1. Go to the projects `page <https://console.cloud.google.com/project>`_ on your Google Cloud Console.
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
 4. Move your mouse pointer over **API and services** and choose **Credentials**.
@@ -104,17 +93,13 @@ Adding Custom Search API and Generating API Key
 
 Adding YouTube Data API and Generating API Key
 -----------------------------------------------
-1. Go to the projects page_ on your Google Cloud Console.
-
-   .. _page: https://console.cloud.google.com/project
+1. Go to the projects `page <https://console.cloud.google.com/project>`_ on your Google Cloud Console.
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
 4. Move your mouse pointer over **API and services** and choose **Credentials**.
 5. Click on create credentials and select API Key and choose close. Make a note of the created API Key and enter it in the config.yaml script at the indicated location.
 6. "From the API and services" option, select library and in the search bar type **youtube**, select **YouTube Data API v3** API and click on "ENABLE".
 7. In the API window, click on "All API Credentials" and in the drop down, make sure to have a tick (check mark) against the API Key that you just generated.
-
-
 
 .. note:: If a custom action uses both Custom Search and YouTube API, you need to enable both the APIs but only one API KEY needs to be generated.
 
@@ -239,14 +224,10 @@ Streaming Music from Gaana.com
 
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
   This feature uses both YouTube Data API v3 and Custom Search API.
-  Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
+  Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key>`_ for guidelines to add YouTube Data API to the project and to generate the required key.
+  Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key>`_ for guidelines to add Custom Search API to the project and to generate the required key.
 
-  .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
-  Click here_ for guidelines to add Custom Search API to the project and to generate the required key.
-
-  .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key
 1. Add your playlists in the config.yaml under **Gaana: and Playlists:**.
-
 2. In the config.yaml, under **Google_cloud_api_key:** replace **ENTER-YOUR-GOOGLE-CLOUD-API-KEY-HERE** with the key from Google Cloud Console.
 
 **Command Syntax:**
@@ -296,12 +277,10 @@ Controlling Domoticz Devices
 
       Hey Google, Set __Bedroom lamp__ brightness to __5__
 
-3. To Change  Colour (refer the list of available colors_)::
+3. To Change  Colour (refer to the `list of available colors <https://gassistpi-documentation.readthedocs.io/en/latest/colorlist.html#list-of-available-colors-for-home-automation-projects>`_)::
 
       Hey Google, Set  _Name of your light_ color to __desired color__
       Hey Google, Change  __Name of your light__ to __desired color__ color
-
-   .. _colors: https://gassistpi-documentation.readthedocs.io/en/latest/colorlist.html#list-of-available-colors-for-home-automation-projects
 
    Example::
 
@@ -328,8 +307,7 @@ Custom Wakeword Activation
 3. You have a choice between Snowboy and Picovoice for the custom wakeword engine.
 4. For Snowboy, change **"Wakeword_Engine"** to **Snowboy** and for Picovoice, change **"Wakeword_Engine"** to **Picovoice**.
 5. For changes to take effect, you need to restart the assistant. Changing status while an instance of assistant is already running will not cause any change.
-6. Create your custom snowboy model here_. Add the models to **/GassistPi/src/resources/snowboy_models** directory.
-.. _here: https://snowboy.kitt.ai
+6. Create your custom snowboy model `here <https://snowboy.kitt.ai>`_. Add the models to **/GassistPi/src/resources/snowboy_models** directory.
 7. Sample Snowboy and Picovoice models have been provided and placed in the /GassistPi/src/resources/ folder. Set your desired models by setting their paths in the config.yaml file.
 8. To disable the default **"Ok Google"** hotword, set the Ok_Google option to **"Disabled"**.
 
@@ -343,15 +321,13 @@ Playing Spotify Playlist
 ----------------------------
 
 .. note:: Spotify API currently only supports playback in a web browser, but DRM content is being blocked in the Raspberry Pi. As a roundabout approach, I have programmed the assistant to get the playlist details using Spotipy API and then fetch those tracks from YouTube. This custom program has a better accuracy than spotify playlist playback using mpsyt.
-          This feature uses a YouTube Data API v3. Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
-.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
+          This feature uses a YouTube Data API v3.
+          Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key>`_ for guidelines to add YouTube Data API to the project and to generate the required key.
 
-1. Click here_ and register for a spotify developer account, if you already don't have one.
-.. _here: https://developer.spotify.com/dashboard/login
+1. Click `here <https://developer.spotify.com/dashboard/login>`_ and register for a spotify developer account, if you already don't have one.
 2. In the developer's dashboard, choose **CREATE A CLIENT ID**. In the pop-up window provide the requested details.
 3. Click on the new app created and copy the **CLIENT ID** and **CLIENT SECRET**. Paste it in the config.yaml file in the indicated space.
-4. Access spotify here_ and copy the username to be entered in config.yaml.
-.. _here: https://www.spotify.com/account/overview/
+4. Access spotify `here <https://www.spotify.com/account/overview/>`_ and copy the username to be entered in config.yaml.
 
 **Command Syntax:**
 To play your playlist::
@@ -370,11 +346,9 @@ To play your playlist::
 
 Tracking Kickstarter Campaigns
 --------------------------------
-A custom Google search engine for Kickstarter_ has been used. This requires an API to be added to your existing project.
-.. _Kickstarter: https://www.kickstarter.com/
+A custom Google search engine for `Kickstarter <https://www.kickstarter.com/>`_ has been used. This requires an API to be added to your existing project.
 
-Click here_ for guidelines to add Custom Search API to the project and to generate the required key.
-.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key
+Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key>`_ for guidelines to add Custom Search API to the project and to generate the required key.
 
 **Command Syntax:**
 To track a kickstarter campaign::
