@@ -563,7 +563,7 @@ Controlling NodeMCU Running Sonoff-Tasmota Firmware
 
        <div style="text-align: center; margin-bottom: 2em;">
        <iframe width="100%" height="350" src="https://www.youtube.com/embed/ioONHaUOtFM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-       </div>     
+       </div>
 
 3. Set your Tasmota details in the under **Tasmota_devicelist** in config.yaml file.
 
@@ -581,23 +581,27 @@ Casting YouTube Videos to Chromecast and Chromecast Control
  - This feature uses a YouTube Data API v3. Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key>`_ for guidelines to add YouTube Data API to the project and to generate the required key.
  - The default keyword is **Chromecast**. You can change that in the main.py script at  ``# if 'chromecast'.lower() in str(usrcmd).lower():``.
  - The IP address of Chromecast can be set in the actions.py file at:
-    ``def chromecast_control(action):
+
+   .. code-block:: bash
+
+     def chromecast_control(action):
        # Chromecast declarations
        # Do not rename/change "TV" its a variable
-       TV = pychromecast.Chromecast("192.168.1.13") #Change ip to match the ip-address of your Chromecast``
+       TV = pychromecast.Chromecast("192.168.1.13") #Change ip to match the ip-address of your Chromecast
+
  - Google has permitted the Chromecast control on its own. So this feature has been disabled. It can be enabled, if Google disables chromecast control in the future.
 
- **Command Syntax:**
+**Command Syntax:**
 
-1. To Play Video on Chromecast::
+ 1. To Play Video on Chromecast::
 
     Hey Google, Play __Desired-Video__ on Chromecast
 
-2. To Stop Playback::
+ 2. To Stop Playback::
 
     Hey Google, Stop Chromecast
 
-2. To Change volume::
+ 3. To Change volume::
 
     Hey Google, Chromecast Volume Up/Down
 
