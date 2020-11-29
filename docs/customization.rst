@@ -214,8 +214,7 @@ Streaming Music from Deezer
 
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
           This feature uses a YouTube Data API v3. Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
-
-          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
+.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
 
 1. Add your Deezer user number in the config.yaml under the **Deezer:** and **User_id**.
 
@@ -239,8 +238,7 @@ Streaming Music from Gaana.com
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
           This feature uses both YouTube Data API v3 and Custom Search API.
           Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
-
-          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
+.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
 
           Click here_ for guidelines to add Custom Search API to the project and to generate the required key.
 
@@ -330,9 +328,7 @@ Custom Wakeword Activation
 4. For Snowboy, change **"Wakeword_Engine"** to **Snowboy** and for Picovoice, change **"Wakeword_Engine"** to **Picovoice**.
 5. For changes to take effect, you need to restart the assistant. Changing status while an instance of assistant is already running will not cause any change.
 6. Create your custom snowboy model here_. Add the models to **/GassistPi/src/resources/snowboy_models** directory.
-
-  .. _here: https://snowboy.kitt.ai
-
+.. _here: https://snowboy.kitt.ai
 7. Sample Snowboy and Picovoice models have been provided and placed in the /GassistPi/src/resources/ folder. Set your desired models by setting their paths in the config.yaml file.
 8. To disable the default **"Ok Google"** hotword, set the Ok_Google option to **"Disabled"**.
 
@@ -351,14 +347,11 @@ Playing Spotify Playlist
           .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
 
 1. Click here_ and register for a spotify developer account, if you already don't have one.
-
-          .. _here: https://developer.spotify.com/dashboard/login
-
+.. _here: https://developer.spotify.com/dashboard/login
 2. In the developer's dashboard, choose **CREATE A CLIENT ID**. In the pop-up window provide the requested details.
 3. Click on the new app created and copy the **CLIENT ID** and **CLIENT SECRET**. Paste it in the config.yaml file in the indicated space.
 4. Access spotify here_ and copy the username to be entered in config.yaml.
-
-          .. _here: https://www.spotify.com/account/overview/
+.. _here: https://www.spotify.com/account/overview/
 
 **Command Syntax:**
 To play your playlist::
@@ -377,13 +370,11 @@ To play your playlist::
 
 Tracking Kickstarter Campaigns
 --------------------------------
-A custom Google search engine for **Kickstarter_** has been used. This requires an API to be added to your existing project.
-
-         .. _Kickstarter: https://www.kickstarter.com/
+A custom Google search engine for Kickstarter_ has been used. This requires an API to be added to your existing project.
+.. _Kickstarter: https://www.kickstarter.com/
 
 Click here_ for guidelines to add Custom Search API to the project and to generate the required key.
-
-.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key
+.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key  
 
 **Command Syntax:**
 To track a kickstarter campaign::
