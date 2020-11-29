@@ -436,7 +436,7 @@ Get Recipe Messaged to Mobile/Tablet
 
 .. note:: This feature uses the Pushbullet API for sending the recipes. Please first setup the Pushbullet feature as given here.
 
-GassistPi uses `Edamam <https://www.edamam.com>'_ for getting recipe details/info. To use this feature:
+GassistPi uses `Edamam <https://www.edamam.com>`_ for getting recipe details/info. To use this feature:
   1. Click `here <https://developer.edamam.com/edamam-recipe-api>`_ to visit the developers' porta for Edamam.
   2. Signup as a developer/login with your existing account.
   3. In the Menubar at the top, Click on Dashboard-->Applications-->Create a new applicatiuon-->Recipe Search API and then create a new application.
@@ -471,7 +471,7 @@ Control Magic Mirror by Voice
 
 3. To power off/reboot/restart Magic Mirror::
 
-   Hey Google, Power off/Reboot/Restart Magic Mirror
+   Hey Google, Power off/Reboot/Restart Magic Mirror    
 
 
 
