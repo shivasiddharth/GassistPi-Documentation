@@ -374,10 +374,10 @@ Emulated Philips Hue Control
 1. Credits for the `Emulated Hue <https://github.com/diyhue/diyHue>`_ to `Marius Motea <https://github.com/mariusmotea>`_.
 2. Follow the guidelines given in the `diyHue's documents <https://diyhue.readthedocs.io/en/latest/>`_ to setup the Emulated Hue Service.
 3. Download sketches for your NodeMCU/Wemos/ESP Devices from `here <https://github.com/diyhue/Lights>`_.
-4. If the Hue config file is not in the default location, change the path to the Hue config file in the following lines of main.py script::
+4. If the Hue config file is not in the default location, change the path to the Hue config file in the following lines of main.py script.:
 
      if os.path.isfile('/opt/hue-emulator/config.json'):
-           with open('/opt/hue-emulator/config.json', 'r') as config:              
+           with open('/opt/hue-emulator/config.json', 'r') as config
 
 **Command Syntax:**
 
