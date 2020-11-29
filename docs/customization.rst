@@ -463,15 +463,15 @@ Control Magic Mirror by Voice
 
 1. To show/hide weather module::
 
-   Hey Google, Show/Hide Weather on Magic Mirror
+    Hey Google, Show/Hide Weather on Magic Mirror
 
 2. To turn magic mirror display on/off::
 
-   Hey Google, Turn Magic Mirror display on/off
+    Hey Google, Turn Magic Mirror display on/off
 
-3. To power off/reboot/restart Magic Mirror::
+3. To power off/reboot/restart Magic Mirror::    
 
-   Hey Google, Power off/Reboot/Restart Magic Mirror    
+    Hey Google, Power off/Reboot/Restart Magic Mirror
 
 
 
