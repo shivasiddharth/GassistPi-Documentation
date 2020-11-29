@@ -469,7 +469,7 @@ Control Magic Mirror by Voice
 
     Hey Google, Turn Magic Mirror display on/off
 
-3. To power off/reboot/restart Magic Mirror::    
+3. To power off/reboot/restart Magic Mirror::
 
     Hey Google, Power off/Reboot/Restart Magic Mirror
 
@@ -503,19 +503,19 @@ Voice Control of GPIOs, Servo Motor and Safe Shutdown of Pi
  - The default keyword for safe shutdown is **shutdown**.
  - Names for devices connected to the GPIOs should be assigned in the config.yaml file.
 
- **Command Syntax:**
+**Command Syntax:**
 
  1. To turn device connected to GPIO on/off::
 
-    Hey Google, **Trigger** turn __Device-Name__ on/off
+     Hey Google, **Trigger** turn __Device-Name__ on/off
 
  2. To turn servo motor (example by 90 degrees)::
 
-    Hey Google, **Trigger** **servo** 90
+     Hey Google, **Trigger** **servo** 90
 
  3. To power off the Pi::
 
-    Hey Google, **Trigger Shutdown**
+     Hey Google, **Trigger Shutdown**
 
 **Check out the demo in the video below:**
 
@@ -558,11 +558,12 @@ Controlling NodeMCU Running Sonoff-Tasmota Firmware
 .. note:: This is an old firmware. You can upgrade to the latest firmware from this one.
 
 2. Upload the firmware properly. You can use this video for reference.
+
    .. raw:: html
 
-        <div style="text-align: center; margin-bottom: 2em;">
-        <iframe width="100%" height="350" src="https://www.youtube.com/embed/ioONHaUOtFM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+       <div style="text-align: center; margin-bottom: 2em;">
+       <iframe width="100%" height="350" src="https://www.youtube.com/embed/ioONHaUOtFM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       </div>     
 
 3. Set your Tasmota details in the under **Tasmota_devicelist** in config.yaml file.
 
