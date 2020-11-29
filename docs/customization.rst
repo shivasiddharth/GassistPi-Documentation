@@ -365,3 +365,240 @@ Example::
 
    Hey Google, Track __Mycroft 2__ Kickstarter campaign
    Hey Google, What is the status of __Mycroft 2__ Kickstarter campaign
+
+
+
+Emulated Philips Hue Control
+-----------------------------
+
+1. Credits for the `Emulated Hue <https://github.com/diyhue/diyHue>'_ to `Marius Motea <https://github.com/mariusmotea>`_.
+2. Follow the guidelines given in the `diyHue's documents <https://diyhue.readthedocs.io/en/latest/>`_ to setup the Emulated Hue Service.
+3. Download sketches for your NodeMCU/Wemos/ESP Devices from `here <https://github.com/diyhue/Lights>`_.
+4. If the Hue config file is not in the default location, change the path to the Hue config file in the following lines of main.py script.
+``            if os.path.isfile('/opt/hue-emulator/config.json'):
+                with open('/opt/hue-emulator/config.json', 'r') as config:
+``
+
+**Command Syntax:**
+
+1. To turn On/Off lights::
+
+   Hey Google, Turn __Hue-Light-Name__ On/Off
+
+2. To change light color::
+
+   Hey Google, Change __Hue-Light-Name__ colour to __Required-Colour__
+
+3. To change brightness::
+
+   Hey Google, Change __Hue-Light-Name brightness__ to __Required-Brightness-Level__
+
+
+
+Sending Voice Messages from Pi to Phone/Tablet
+----------------------------------------------
+
+..note::  For pushing voice messages, the GassistPi uses Pushbullet API.
+
+1. Download and install pushbullet app on your tablet/mobile device.
+2. Visit www.pushbullet.com register for new account or sign in with your existing account.
+3. Choose Settings-->Account and then choose **Create access token**.
+4. Copy this token and paste in config.yaml under **Pushbullet** and **Pushbullet_API_KEY**.
+
+**Command Syntax:**
+
+To send message::
+
+   Hey Google, Send message
+
+
+
+Send SMS via Clickatell
+------------------------
+
+1. Create a free account with clickatell.com.
+2. Sign in to Clickatell SMS Platform.
+3. Create sms integration.
+4. Add your generated clickatell api number in config.yaml at the given point.
+
+**Command Syntax:**
+
+To send sms::
+
+   Hey Google, Send clickatell message to __Person-name__
+
+
+
+Get Recipe Messaged to Mobile/Tablet
+--------------------------------------
+
+..note:: This feature uses the Pushbullet API for sending the recipes. Please first setup the Pushbullet feature as given here.
+
+GassistPi uses `Edamam <https://www.edamam.com>'_ for getting recipe details/info. To use this feature:
+  1. Click `here <https://developer.edamam.com/edamam-recipe-api>`_ to visit the developers' porta for Edamam.
+  2. Signup as a developer/login with your existing account.
+  3. In the Menubar at the top, Click on Dashboard-->Applications-->Create a new applicatiuon-->Recipe Search API and then create a new application.
+  4. Copy the application id and application key and paste it in the actions.py script under the getrecipe function.
+
+..note:: While copying the application key, do not copy the "—"
+
+**Command Syntax:**
+
+To get recipes::
+
+   Hey Google, Get ingredients for __Required-Item__
+
+
+
+Control Magic Mirror by Voice
+-----------------------------
+
+1. You can control either Magic Mirror running on another Pi or Magic Mirror running on the same pi as GassistPi.
+2. As a prerequisite, you should have the remote control module installed in the Pi running Magic Mirror.
+3. Enter the Ip address of Pi running Magic Mirror in the config.yaml against the variable **mmmip** declared.
+
+**Command Syntax:**
+
+1. To show/hide weather module::
+
+   Hey Google, Show/Hide Weather on Magic Mirror
+
+2. To turn magic mirror display on/off::
+
+   Hey Google, Turn Magic Mirror display on/off
+
+3. To power off/reboot/restart Magic Mirror::
+
+   Hey Google, Power off/Reboot/Restart Magic Mirror
+
+
+
+Indicators for Google Assistant's Listening and Speaking Events
+---------------------------------------------------------------
+
+..note::  Default GPIOs for the indicators are BCM GPIO05 and GPIO06. If you want to change the pins, change it in the config.yaml file.
+
+Connect LEDs with colours of your choice to GPIO05 for Listening and GPIO06 for Speaking Events.
+
+
+
+Pushbutton to Stop Music/Radio Playback and for Muting the Microphone
+---------------------------------------------------------------------
+
+..note::  Default GPIO for the pushbutton is BCM GPIO23. If you want to change the pins, change it in the config.yaml file.
+
+Connect a pushbutton between GPIO23 and Ground. Single press mutes microphone and double press stops music streaming.
+
+
+
+Voice Control of GPIOs, Servo Motor and Safe Shutdown of Pi
+-----------------------------------------------------------
+
+..note::
+ - This feature uses a combination of two keywords to prevent false positives. These can be changed in the keywords.yaml file.
+ - The default main keyword is **trigger**.
+ - The default keyword for servo motor control is **servo**.
+ - The default keyword for safe shutdown is **shutdown**.
+ - Names for devices connected to the GPIOs should be assigned in the config.yaml file.
+
+ **Command Syntax:**
+
+ 1. To turn device connected to GPIO on/off::
+
+    Hey Google, **Trigger** turn __Device-Name__ on/off
+
+ 2. To turn servo motor (example by 90 degrees)::
+
+    Hey Google, **Trigger** **servo** 90
+
+ 3. To power off the Pi::
+
+    Hey Google, **Trigger Shutdown**
+
+**Check out the demo in the video below:**
+
+    .. raw:: html
+
+        <div style="text-align: center; margin-bottom: 2em;">
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/-MmxWWgceCg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+
+
+Voice Control of NodeMCU
+--------------------------
+
+NodeMCU control has been implemented in two ways:
+
+    1. Control of NodeMCU running a webserver.
+    2. Control of NodeMCU running Sonoff-Tasmota Firmware.
+
+Controlling NodeMCU Running Webserver
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Download the Arduino IDE code for Nodemcu from `here <https://github.com/shivasiddharth/iotwemos/blob/master/Google-Home-NodeMCU.ino>`_.
+2. Add the wifi credentials, make the desired changes and upload the Arduino code onto the NodeMCU and get the IP address from the serial monitor.
+3. Add the NodeMCU's IP address in the config.yaml under the **ESP** and **IP**.
+4. Set device names in the config.yaml under **ESP** and **devicename**.
+5. The default keyword for NodeMCU control is **Wireless**. You can change this in the keywords.yaml file.
+
+**Command Syntax:**
+
+To turn the device or ESP Pin on/off::
+
+   Hey Google, **Wireless** turn __Device-Name__ on/off
+
+Controlling NodeMCU Running Sonoff-Tasmota Firmware
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Download the Tasmota firmware from this `link <https://mega.nz/#!Dwx0lDYL!CK_QYoR9GvBhqdEmVs98ac45TjTjPIQyeaezYT4jfE0>`_.
+
+..note:: This is an old firmware. You can upgrade to the latest firmware from this one.
+
+2. Upload the firmware properly. You can use this video for reference.
+   .. raw:: html
+
+        <div style="text-align: center; margin-bottom: 2em;">
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/ioONHaUOtFM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+3. Set your Tasmota details in the under **Tasmota_devicelist** in config.yaml file.
+
+**Command Syntax:**
+
+To turn the Tasmota device on/off::
+
+   Hey Google, Turn __Tasmota-Device-Name__ on/off
+
+
+
+Casting YouTube Videos to Chromecast and Chromecast Control
+-----------------------------------------------------------
+..note::
+ - This feature uses a YouTube Data API v3. Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key>`_ for guidelines to add YouTube Data API to the project and to generate the required key.
+ - The default keyword is **Chromecast**. You can change that in the main.py script at  ``# if 'chromecast'.lower() in str(usrcmd).lower():``.
+ - The IP address of Chromecast can be set in the actions.py file at:
+    ``def chromecast_control(action):
+       # Chromecast declarations
+       # Do not rename/change "TV" its a variable
+       TV = pychromecast.Chromecast("192.168.1.13") #Change ip to match the ip-address of your Chromecast``
+ - Google has permitted the Chromecast control on its own. So this feature has been disabled. It can be enabled, if Google disables chromecast control in the future.
+
+ **Command Syntax:**
+
+1. To Play Video on Chromecast::
+
+    Hey Google, Play __Desired-Video__ on Chromecast
+
+2. To Stop Playback::
+
+    Hey Google, Stop Chromecast
+
+2. To Change volume::
+
+    Hey Google, Chromecast Volume Up/Down
+
+
+
+Controlling Media or Music Streaming by Voice
+---------------------------------------------
