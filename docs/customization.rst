@@ -227,7 +227,7 @@ Streaming Music from Gaana.com
  - As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
  - This feature uses both YouTube Data API v3 and Custom Search API.
  - Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key>`_ for guidelines to add YouTube Data API to the project and to generate the required key.
- - Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key>`_ for guidelines to add Custom Search API to the project and to generate the required key.    
+ - Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key>`_ for guidelines to add Custom Search API to the project and to generate the required key.
 
 1. Add your playlists in the config.yaml under **Gaana: and Playlists:**.
 2. In the config.yaml, under **Google_cloud_api_key:** replace **ENTER-YOUR-GOOGLE-CLOUD-API-KEY-HERE** with the key from Google Cloud Console.
@@ -338,10 +338,9 @@ To play your playlist::
 
    Hey Google, Play __user-playlist-query__  from Spotify
 
- Example::
+Example::
 
    Hey Google, Play __Workout playlist__ from Spotify
-
    Hey Google, Play __Top Dance Numbers__ from Spotify
 
 .. note:: If your playlist name does not have the word **playlist** do not use that in the query.
@@ -358,12 +357,9 @@ Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customizat
 To track a kickstarter campaign::
 
    Hey Google, Track __your-desired-campaign__ Kickstarter campaign
-
    Hey Google, What is the status of __your-desired-campaign__ Kickstarter campaign
 
+Example::
 
- Example::
-
-   Hey Google, Track __Mycroft 2__ Kickstarter campaign
-
+   Hey Google, Track __Mycroft 2__ Kickstarter campaign   
    Hey Google, What is the status of __Mycroft 2__ Kickstarter campaign
