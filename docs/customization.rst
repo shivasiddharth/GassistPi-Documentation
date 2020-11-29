@@ -377,23 +377,29 @@ Emulated Philips Hue Control
 4. If the Hue config file is not in the default location, change the path to the Hue config file in the following lines of main.py script.
 
    .. code-block:: python
-   
+
      if os.path.isfile('/opt/hue-emulator/config.json'):
            with open('/opt/hue-emulator/config.json', 'r') as config
 
 **Command Syntax:**
 
-1. To turn On/Off lights::
+1. To turn On/Off lights:
 
-   Hey Google, Turn __Hue-Light-Name__ On/Off
+   .. code-block:: bash
 
-2. To change light color::
+     Hey Google, Turn __Hue-Light-Name__ On/Off
 
-   Hey Google, Change __Hue-Light-Name__ colour to __Required-Colour__
+2. To change light color:
 
-3. To change brightness::
+   .. code-block:: bash
 
-   Hey Google, Change __Hue-Light-Name brightness__ to __Required-Brightness-Level__
+     Hey Google, Change __Hue-Light-Name__ colour to __Required-Colour__
+
+3. To change brightness:
+
+   .. code-block:: bash
+
+     Hey Google, Change __Hue-Light-Name brightness__ to __Required-Brightness-Level__
 
 
 
