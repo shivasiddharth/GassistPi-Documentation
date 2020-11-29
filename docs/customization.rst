@@ -216,6 +216,9 @@ Streaming Music from Deezer
 
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
   This feature uses a YouTube Data API v3.
+  Go to the projects page_ on your Google Cloud Console.
+
+     .. _page: https://console.cloud.google.com/project
   Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
 
   .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
