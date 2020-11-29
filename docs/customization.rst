@@ -334,6 +334,7 @@ Playing Spotify Playlist
 4. Access spotify `here <https://www.spotify.com/account/overview/>`_ and copy the username to be entered in config.yaml.
 
 **Command Syntax:**
+
 To play your playlist::
 
    Hey Google, Play __user-playlist-query__  from Spotify
@@ -353,8 +354,9 @@ A custom Google search engine for `Kickstarter <https://www.kickstarter.com/>`_ 
 
 Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key>`_ for guidelines to add Custom Search API to the project and to generate the required key.
 
-**Command Syntax:**  
-To track a kickstarter campaign::
+**Command Syntax:**
+
+To track a Kickstarter campaign::
 
    Hey Google, Track __your-desired-campaign__ Kickstarter campaign
    Hey Google, What is the status of __your-desired-campaign__ Kickstarter campaign
