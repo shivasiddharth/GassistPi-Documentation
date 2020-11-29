@@ -91,7 +91,8 @@ Using Google Cloud Text to Speech
 Adding Custom Search API and Generating API Key
 -----------------------------------------------
 1. Go to the projects page_ on your Google Cloud Console.
-.. _page: https://console.cloud.google.com/project
+
+   .. _page: https://console.cloud.google.com/project
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
 4. Move your mouse pointer over **API and services** and choose **Credentials**.
@@ -104,7 +105,8 @@ Adding Custom Search API and Generating API Key
 Adding YouTube Data API and Generating API Key
 -----------------------------------------------
 1. Go to the projects page_ on your Google Cloud Console.
-.. _page: https://console.cloud.google.com/project
+
+   .. _page: https://console.cloud.google.com/project
 2. Select your project from the list.
 3. On the left top corner, click on the hamburger icon or three horizontal stacked lines.
 4. Move your mouse pointer over **API and services** and choose **Credentials**.
@@ -214,8 +216,8 @@ Streaming Music from Deezer
 
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
           This feature uses a YouTube Data API v3. Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
-.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
 
+          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
 1. Add your Deezer user number in the config.yaml under the **Deezer:** and **User_id**.
 
 2. In the config.yaml, under **Google_cloud_api_key:** replace **ENTER-YOUR-GOOGLE-CLOUD-API-KEY-HERE** with the key from Google Cloud Console.
@@ -237,13 +239,12 @@ Streaming Music from Gaana.com
 
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
           This feature uses both YouTube Data API v3 and Custom Search API.
-          Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.  
-.. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
-
+          Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
+          
+          .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
           Click here_ for guidelines to add Custom Search API to the project and to generate the required key.
 
           .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-custom-search-api-and-generating-api-key
-
 1. Add your playlists in the config.yaml under **Gaana: and Playlists:**.
 
 2. In the config.yaml, under **Google_cloud_api_key:** replace **ENTER-YOUR-GOOGLE-CLOUD-API-KEY-HERE** with the key from Google Cloud Console.
