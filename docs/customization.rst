@@ -237,7 +237,7 @@ Streaming Music from Gaana.com
 
 .. note:: As a roundabout approach, I have programmed the assistant to get the playlist details using Deezer API and then fetch those tracks from YouTube.
           This feature uses both YouTube Data API v3 and Custom Search API.
-          Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.
+          Click here_ for guidelines to add YouTube Data API to the project and to generate the required key.  
 .. _here: https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key
 
           Click here_ for guidelines to add Custom Search API to the project and to generate the required key.
@@ -350,7 +350,7 @@ Playing Spotify Playlist
 2. In the developer's dashboard, choose **CREATE A CLIENT ID**. In the pop-up window provide the requested details.
 3. Click on the new app created and copy the **CLIENT ID** and **CLIENT SECRET**. Paste it in the config.yaml file in the indicated space.
 4. Access spotify here_ and copy the username to be entered in config.yaml.
-.. _here: https://www.spotify.com/account/overview/  
+.. _here: https://www.spotify.com/account/overview/
 
 **Command Syntax:**
 To play your playlist::
