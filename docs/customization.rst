@@ -392,7 +392,7 @@ Emulated Philips Hue Control
 
 3. To change brightness::
 
-   Hey Google, Change __Hue-Light-Name brightness__ to __Required-Brightness-Level__
+   Hey Google, Change __Hue-Light-Name brightness__ to __Required-Brightness-Level__   
 
 
 
