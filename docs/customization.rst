@@ -609,3 +609,44 @@ Casting YouTube Videos to Chromecast and Chromecast Control
 
 Controlling Media or Music Streaming by Voice
 ---------------------------------------------
+
+You can change volume, play, pause, change music/radio. Command syntaxes have been given below with the keyword in bold.
+
+**Command Syntax:**
+
+1. To Pause::
+
+    Hey Google, **Pause Music**
+
+2. To Resume::
+
+    Hey Google, **Resume Music**
+
+3. To Increase/Decrease volume::
+
+    Hey Google, Increase/Decrease **Music Volume** by __A-Number-Between-0-100__
+
+4. To Set Volume::
+
+    Hey Google, Set/Change **Music Volume** to __A-Number-Between-0-100__
+
+5. To Set Volume to Maximum/Minimum::
+
+    Hey Google, Set/Change **Music Volume** to maximum/minimum
+
+6. To Change to Previous Track::
+
+    Hey Google, **Play Previous**
+    Hey Google, **Play Previous** Song
+    Hey Google, **Play Previous** Track
+
+7. To Change to Next Track::
+
+    Hey Google, **Play Next**
+    Hey Google, **Play Next** Song
+    Hey Google, **Play Next** Track
+
+
+
+Music Streaming from YouTube
+-------------------------------
