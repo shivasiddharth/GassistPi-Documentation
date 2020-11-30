@@ -610,7 +610,7 @@ Casting YouTube Videos to Chromecast and Chromecast Control
 Controlling Media or Music Streaming by Voice
 ---------------------------------------------
 
-You can change volume, play, pause, change music/radio. Command syntaxes have been given below with the keyword in bold.
+You can change volume, play, pause, change music/radio. Command syntaxes have been given below with the keyword within * symbols.
 
 **Command Syntax:**
 
