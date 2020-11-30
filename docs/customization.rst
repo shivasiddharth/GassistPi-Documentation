@@ -650,3 +650,47 @@ You can change volume, play, pause, change music/radio. Command syntaxes have be
 
 Music Streaming from YouTube
 -------------------------------
+
+1. Music playback from YouTube is facilitated by the  YouTube Data API v3.
+2. Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key>`_ for guidelines to add YouTube Data API to the project and to generate the required key.
+
+**Command Syntax:**
+
+1. To Play a Song::
+
+    Hey Google, Play __Desired-Song-Name__ from YouTube
+
+2. To Play and Song and Related 10 Songs::
+
+    Hey Google, Autoplay __Desired-Song-Name__ from YouTube
+
+3. To Play a Song from a Playlist::
+
+    Hey Google, Play __Desired-Playlist-Name__ from YouTube
+
+4. To Play 10 Songs from a Playlist::
+
+    Hey Google, Autoplay __Desired-Playlist-Name__ from YouTube
+
+5. To Play a Song from a Channel::
+
+    Hey Google, Play __Desired-Channel-Name__ from YouTube
+
+6. To Play 10 Songs from a Channel::
+
+    Hey Google, Autoplay __Desired-Channel-Name__ from YouTube
+
+.. note:: Depending upon the internet and the system/board specification, the features that involve 10 tracks will take some time to fethc the track list.
+
+
+
+Music Streaming from Google Music
+---------------------------------
+
+The music streaming from Google Music is facilitated by using `gmusicapi. <https://unofficial-google-music-api.readthedocs.io/en/latest/>`_
+
+First you need to authorize the api to access your Google Music data. Run the following script to authorize prior to starting the assistant.
+
+.. code-block:: bash
+
+  /home/${USER}/env/bin/python -u /home/${USER}/GassistPi/Extras/gmusicauth.py
