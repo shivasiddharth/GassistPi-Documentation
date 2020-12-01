@@ -694,3 +694,23 @@ First you need to authorize the api to access your Google Music data. Run the fo
 .. code-block:: bash
 
   /home/${USER}/env/bin/python -u /home/${USER}/GassistPi/Extras/gmusicauth.py
+
+**Command Syntax:**
+
+1. To Play All Songs in Loop::
+
+    Hey Google, Play All the songs from Google Music
+
+2. To Play a Playlist::
+
+    Hey Google, Play songs from the first playlist from Google Music
+
+.. note::  Playlists are sorted by date created, if you have multiple playlists, use a similar syntax replacing first with second, third etc
+
+3. To Play Songs by a Particular Artist::
+
+    Hey Google, Play songs by artist __YOUR-DESIRED-ARTIST__ from Google Music
+
+4. To Play Songs from a Particular Album::
+
+    Hey Google, Play songs from album __YOUR-DESIRED-ALBUM-NAME__ from Google Music

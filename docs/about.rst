@@ -2,7 +2,9 @@
 About this project
 ==================
 
-In May of 2017, Google Released it's AIY Projects kit. Initially not many had access to it, so that is when I started modifying the Google Assistant SDK adding AIY like features to help out the ones left without the kit.    
+.. image:: https://drive.google.com/file/d/1p4vZW5LuVLPmhIxwls_0HwFLFsyIZL3G/view?usp=sharing
+
+In May of 2017, Google Released it's AIY Projects kit. Initially not many had access to it, so that is when I started modifying the Google Assistant SDK adding AIY like features to help out the ones left without the kit.
 
 Every project requires a name and so I named it GassistPi ("G"oogle "Assist"ant on "Pi").
 
