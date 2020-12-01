@@ -20,4 +20,5 @@ Documentation for GassistPi Project
    updating
    customization
    rpigpios
+   homeindicator
    colorlist

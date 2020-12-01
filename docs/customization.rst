@@ -714,3 +714,168 @@ First you need to authorize the api to access your Google Music data. Run the fo
 4. To Play Songs from a Particular Album::
 
     Hey Google, Play songs from album __YOUR-DESIRED-ALBUM-NAME__ from Google Music
+
+
+
+Run Custom Scripts
+--------------------
+
+1. By default, running custom scripts is disabled.
+2. To enable it, change **Script_Control:** in config.yaml from **Disabled** to **Enabled**.
+
+.. note:: The number of script names mentioned should match the number of script commands in config.yaml.
+
+**Command Syntax:**
+
+To Run a Script::
+
+    Hey Google, Run Script __Desired-Script-Name__
+
+
+
+Playing Radio Channels
+-----------------------
+
+Radio station names and the associated links are to be set in the config.yaml file
+
+.. note:: The number of radio station names mentioned should match the number of radio station links in config.yaml.
+
+**Command Syntax:**
+
+To Play a Radio Station::
+
+    Hey Google, Play Radio __Desired-Radio-Station-Name__
+
+
+
+Tracking Parcels
+-----------------
+
+1. Regsiter for a free account with `Aftership. <https://www.aftership.com/>`_
+2. Generate an API number and add parcels to the tracking list.
+3. Add the API number in the actions.py file
+
+For a better understanding follow the attached youtube video.
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/WOyYL46s-q0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+**Command Syntax:**
+
+To Track Parcels::
+
+   Hey Google, Where is my parcel
+
+   Hey Google, Track my parcel
+
+
+RSS Feeds Streaming
+----------------------
+
+.. note:: **numfeeds** variable within the feed function in actions.py file is the feed limit. Certain RSS feeds can have upto 60 items and **numfeeds** variable limits the number of items to stream. The default value has been set to 10, which if you want can change.
+
+**Command Syntax:**
+
+To Play Feeds::
+
+   Hey Google, Top Tech News please
+
+   Hey Google, Top Sports News please
+
+   Hey Google, Top World News please
+
+.. note:: You can interrupt the feed playback using the Stop Pushbutton
+
+
+
+KODI Control
+------------------
+
+.. note:: By default, the KODI control is disabled. To enable, in the config.yaml, under kodi, change control option from **'Disabled'** to **'Enabled'**.
+
+
+1. Music playback from YouTube is facilitated by the  YouTube Data API v3.
+2. Click `here <https://gassistpi-documentation.readthedocs.io/en/latest/customization.html#adding-youtube-data-api-and-generating-api-key>`_ for guidelines to add YouTube Data API to the project and to generate the required key.
+3. Enable HTTP COntrol in KODI
+   i.  Settings → Services → Control → Allow remote control via HTTP.
+   ii. Set the port number to 8080, username to kodi and password to kodi (username and password should be in lowercase).
+4. For Kodi to play the YouTube video, you need to add and enable the YouTube Plugin on Kodi.
+
+**Command Syntax:**
+
++-------------------+------------------------------------------------------------------------------------------------------------+
+| Command Syntax                                          | What it does                                                         |
++=========================================================+======================================================================+
+| Hey Google, Shuffle my songs on kodi                    | Shuffles all the songs added to the kodi library                     |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Play songs from _Album name_ on kodi        | Plays all the songs under the mentioned Album name                   |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Play songs by, _Artist name_ on kodi        | Plays all the songs rendered by the mentioned artist                 |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Play _Song name_ song on kodi               | Plays the requested song, if it has been added to the library        |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Play _Movie name_ movie on kodi             | Plays the requested movie, if it has been added to the library       |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, From YouTube, Play _Youtube Video_ on kodi  | Fetches the YouTube video and plays it on kodi                       |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, What is playing? on kodi                    | Tells you by voice as to what is currently playing                   |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Repeat this or Repeat one on kodi           | Repeats the current track playing                                    |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Repeat all on kodi                          | Changes repeat mode to all                                           |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Repeat off on kodi                          | Turns off Repeat                                                     |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Turn Shuffle On on kodi                     | Turns on shuffle mode                                                |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Turn Shuffle Off on kodi                    | Turns off shuffle mode                                               |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Play Next on kodi                           | Plays the next track                                                 |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Play Previous on kodi                       | Plays the previous track                                             |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Scroll a bit forward on kodi                | Fast forwards a movie/music by a small amount                        |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Scroll forward on kodi                      | Fast forwards a movie/track by a large margin                        |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Scroll a bit backward on kodi               | Rewinds a movie/track by a small amount                              |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Scroll backward on kodi                     | Rewinds a movie/track by a large margin                              |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Set volume _Between 0 and 100_ on kodi      | Sets the volume to the mentioned number                              |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Get volume on kodi                          | Tells you the current volume level by voice                          |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Toggle mute on kodi                         | Either mutes or unmutes, depending on mute status                    |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Pause on kodi                               | Pauses the current video/track                                       |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Resume on kodi                              | Resumes playing the video/track                                      |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Stop on kodi                                | Stops playing and closes the player                                  |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Goolge, goto _Home_ on kodi                         | Opens the appropriate menu or window mentioned                       |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Goolge, goto  _Settings_ on kodi                    | Opens the settings menu or window                                    |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Goolge, goto _Videos_ on kodi                       | Opens the videos menu or window                                      |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Goolge, goto _Weather_ on kodi                      | Opens the weather menu or window                                     |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, goto _Music_ on kodi                        | Opens the music menu or window                                       |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Move Up on kodi                             | Moves selection pointer up                                           |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Move Down on kodi                           | Moves selection pointer down                                         |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Move Left on kodi                           | Moves selection pointer left                                         |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Move Right on kodi                          | Moves selection pointer right                                        |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Move Back on kodi                           | Goes back, equivalent to esc key                                     |
++---------------------------------------------------------+----------------------------------------------------------------------+
+| Hey Google, Move Select on kodi                         | Makes a selection, equivalent to enter key                           |
++---------------------------------------------------------+----------------------------------------------------------------------+
