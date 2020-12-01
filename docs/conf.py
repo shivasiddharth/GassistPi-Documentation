@@ -35,14 +35,14 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'GassistPi'
-copyright = u'2019, Shivasiddharth'
+copyright = u'2020, Shivasiddharth'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '51.36'
+version = '60.38'
 # The full version, including alpha/beta/rc tags.
 release = '1.0'
 
