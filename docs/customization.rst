@@ -680,7 +680,7 @@ Music Streaming from YouTube
 
     Hey Google, Autoplay __Desired-Channel-Name__ from YouTube
 
-.. note:: Depending upon the internet and the system/board specification, the features that involve 10 tracks will take some time to fethc the track list.
+.. note:: Depending upon the internet and the system/board specification, the features that involve 10 tracks will take some time to fetch the track list.
 
 
 
