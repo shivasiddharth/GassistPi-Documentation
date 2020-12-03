@@ -23,6 +23,10 @@ Run the following in the terminal::
 
      sudo apt-get update
      cd /home/${USER}/
+     sudo chmod +x ./GassistPi/audio-drivers/USB-DAC/scripts/disable-onboard.sh
+     sudo ./GassistPi/audio-drivers/USB-DAC/scripts/disable-onboard.sh
+     sudo reboot
+     cd /home/${USER}/   
      sudo chmod +x ./GassistPi/audio-drivers/USB-DAC/scripts/install-usb-dac.sh
      sudo ./GassistPi/audio-drivers/USB-DAC/scripts/install-usb-dac.sh
      speaker-test
@@ -43,7 +47,7 @@ Run the following in the terminal::
      speaker-test
 
 .. note::
- Pi users on May 2020 or a later release:  
+ Pi users on May 2020 or a later release:
  - Copy the USB-MIC-HDMI and USB-MIC-JACK folders from the /Extras/May2020 directory and paste them in the audio-drivers directory and then proceed with the instructions below.
 
 USB Mic and HDMI Users
