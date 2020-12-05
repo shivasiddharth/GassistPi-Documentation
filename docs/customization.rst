@@ -36,6 +36,8 @@ Controlling Sonoff-Tasmota, Domoticz devices from Google Home
 Using the Interpreter Mode
 --------------------------
 
+.. note:: Google has the interpreter feature enabled in the cloud. That is, you can use the interpreter without this customization hack. You can leave this feature disabled in the config.yaml.   
+
 .. note:: This uses GOOGLE CLOUD SPEECH API. Free usage is limited to `60MINS/MONTH <https://cloud.google.com/speech-to-text/pricing>`_.
 
 1. Go to the projects `page <https://console.cloud.google.com/project>`_ on your Google Cloud Console.
