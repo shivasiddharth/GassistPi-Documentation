@@ -26,7 +26,7 @@ Run the following in the terminal::
      sudo chmod +x ./GassistPi/audio-drivers/USB-DAC/scripts/disable-onboard.sh
      sudo ./GassistPi/audio-drivers/USB-DAC/scripts/disable-onboard.sh
      sudo reboot
-     cd /home/${USER}/   
+     cd /home/${USER}/
      sudo chmod +x ./GassistPi/audio-drivers/USB-DAC/scripts/install-usb-dac.sh
      sudo ./GassistPi/audio-drivers/USB-DAC/scripts/install-usb-dac.sh
      speaker-test
@@ -91,21 +91,7 @@ Run the following in the terminal::
        speaker-test
 
 
-Respeaker 2 Mic HAT Users
-~~~~~~~~~~~~~~~~~~~
-Run the following in the terminal::
-
-       sudo apt-get update
-       sudo apt-get purge pulseaudio
-       cd /home/${USER}/
-       git clone https://github.com/shivasiddharth/seeed-voicecard
-       cd ./seeed-voicecard/
-       sudo ./install.sh
-       sudo reboot
-       speaker-test
-
-
-Other Respeaker Mic HAT Users
+Respeaker Mic HAT Users
 ~~~~~~~~~~~~~~~~~~~
 Run the following in the terminal::
 
