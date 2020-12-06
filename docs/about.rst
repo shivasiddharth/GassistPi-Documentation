@@ -1,10 +1,10 @@
 .. image:: https://user-images.githubusercontent.com/18142081/100752126-32b76b80-340e-11eb-9cf1-2c7355cd4523.png
-   :scale: 50%   
+   :scale: 50%
 
 
-==================
+*******************
 About this project
-==================
+*******************   
 
 In May of 2017, Google Released it's AIY Projects kit. Initially not many had access to it, so that is when I started modifying the Google Assistant SDK adding AIY like features to help out the ones left without the kit.
 

@@ -1,6 +1,6 @@
-=================
+#################
 Configuring audio
-=================
+#################
 
 .. note::
  - Non-Raspberry Pi users and users using other setups, choose the USB-DAC option.
@@ -10,15 +10,19 @@ Configuring audio
  - Respeaker users, please do not use their official setup for this project.
 
 
+*******************************************************   
 Choose the audio configuration according to your setup
-------------------------------------------------------
+*******************************************************
 Non-Raspbian users install Alsa first::
 
         sudo apt-get install alsa-utils
 
 
+Users on Raspberry Pi OS Prior to Dec 2020 Release
+====================================================
+
 USB DAC or USB Sound Card Users
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 Run the following in the terminal::
 
      sudo apt-get update
@@ -33,7 +37,7 @@ Run the following in the terminal::
 
 
 AIY-HAT Users
-~~~~~~~~~~~~~
+---------------------------------
 Run the following in the terminal::
 
      sudo apt-get update
@@ -47,11 +51,11 @@ Run the following in the terminal::
      speaker-test
 
 .. note::
- Pi users on May 2020 or a later release:
- - Copy the USB-MIC-HDMI and USB-MIC-JACK folders from the /Extras/May2020 directory and paste them in the audio-drivers directory and then proceed with the instructions below.
+  Pi users using a release between May 2020 and Dec 2020:
+   - Copy the USB-MIC-HDMI and USB-MIC-JACK folders from the /Extras/May2020 directory and paste them in the audio-drivers directory and then proceed with the instructions below.
 
 USB Mic and HDMI Users
-~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 Run the following in the terminal::
 
       sudo apt-get update
@@ -66,7 +70,7 @@ Run the following in the terminal::
 
 
 USB Mic and Audio Jack Users
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 Run the following in the terminal::
 
        sudo apt-get update
@@ -77,7 +81,7 @@ Run the following in the terminal::
 
 
 Custom Voice HAT Users
-~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 Run the following in the terminal::
 
        sudo apt-get update
@@ -92,7 +96,7 @@ Run the following in the terminal::
 
 
 Respeaker Mic HAT Users
-~~~~~~~~~~~~~~~~~~~
+---------------------------------
 Run the following in the terminal::
 
        sudo apt-get update
@@ -102,3 +106,52 @@ Run the following in the terminal::
        sudo ./install.sh
        sudo reboot
        speaker-test
+
+
+Users on Raspberry Pi OS Dec 2020 Release or After
+====================================================
+
+
+USB DAC or USB Sound Card or USB Mic Users
+------------------------------------------
+From Dec 2020 release, USB audio devices are plug and play.
+  1. Insert your USB device.
+  2. Right click on the audio/speaker icon on the bar at the top.
+  3. Select your Audio Input and Audio Output device.
+
+
+AIY-HAT Users
+---------------------------------
+Run the following in the terminal::
+
+     sudo apt-get update
+     cd /home/${USER}/
+     sudo chmod +x ./GassistPi/audio-drivers/AIY-HAT/scripts/configure-driver.sh
+     sudo ./GassistPi/audio-drivers/AIY-HAT/scripts/configure-driver.sh
+     sudo reboot
+     speaker-test
+
+
+Custom Voice HAT Users
+---------------------------------
+Run the following in the terminal::
+
+     sudo apt-get update
+     cd /home/${USER}/
+     sudo chmod +x ./GassistPi/audio-drivers/CUSTOM-VOICE-HAT/scripts/install-i2s.sh
+     sudo ./GassistPi/audio-drivers/CUSTOM-VOICE-HAT/scripts/install-i2s.sh
+     sudo reboot
+     speaker-test
+
+
+Respeaker Mic HAT Users
+---------------------------------
+Run the following in the terminal::
+
+     sudo apt-get update
+     cd /home/${USER}/
+     git clone https://github.com/shivasiddharth/seeed-voicecard
+     cd ./seeed-voicecard/
+     sudo ./install.sh
+     sudo reboot
+     speaker-test
