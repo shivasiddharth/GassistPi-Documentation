@@ -8,8 +8,6 @@ Supported Platforms
 -------------------
 .. note:: Do not use the prebuilt AIY Image.
 
-.. note:: Do not use the December 2020 release of the Raspberry Pi OS yet. Audio configs need to be tested.   
-
 Any single board computer or machine running one of the following OS:
  - Armbian Stretch
  - Raspbian Stretch and Buster
