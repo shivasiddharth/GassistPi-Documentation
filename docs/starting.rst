@@ -6,7 +6,10 @@ Before Starting
 
 Supported Platforms
 -------------------
-.. note:: Do not use the prebuilt AIY Image.
+.. note::
+ - Do not use the prebuilt AIY Image.
+ - Do not run the upgrade command.
+ - Skip the updation process when setting up a fresh copy of Raspbian OS. 
 
 Any single board computer or machine running one of the following OS:
  - Armbian Stretch
