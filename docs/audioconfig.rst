@@ -10,7 +10,7 @@ Configuring audio
  - Respeaker users, please do not use their official setup for this project.
 
 
-*******************************************************   
+*******************************************************
 Choose the audio configuration according to your setup
 *******************************************************
 Non-Raspbian users install Alsa first::
@@ -49,6 +49,21 @@ Run the following in the terminal::
      sudo chmod +x ./GassistPi/audio-drivers/AIY-HAT/scripts/install-alsa-config.sh
      sudo ./GassistPi/audio-drivers/AIY-HAT/scripts/install-alsa-config.sh
      speaker-test
+
+
+AIY-VOICE-BONNET Users
+---------------------------------
+Run the following in the terminal::
+
+    sudo apt-get update
+    cd /home/${USER}/
+    sudo chmod +x ./GassistPi/audio-drivers/AIY-VOICE-BONNET/scripts/configure-driver.sh
+    sudo ./GassistPi/audio-drivers/AIY-VOICE-BONNET/scripts/configure-driver.sh
+    sudo reboot
+    cd /home/${USER}/
+    sudo chmod +x ./GassistPi/audio-drivers/AIY-VOICE-BONNET/scripts/install-alsa-config.sh
+    sudo ./GassistPi/audio-drivers/AIY-VOICE-BONNET/scripts/install-alsa-config.sh
+    speaker-test
 
 .. note::
   Pi users using a release between May 2020 and Dec 2020:
@@ -130,6 +145,18 @@ Run the following in the terminal::
      sudo ./GassistPi/audio-drivers/AIY-HAT/scripts/configure-driver.sh
      sudo reboot
      speaker-test
+
+
+AIY-VOICE-BONNET Users
+---------------------------------
+Run the following in the terminal::
+
+    sudo apt-get update
+    cd /home/${USER}/
+    sudo chmod +x ./GassistPi/audio-drivers/AIY-VOICE-BONNET/scripts/configure-driver.sh
+    sudo ./GassistPi/audio-drivers/AIY-VOICE-BONNET/scripts/configure-driver.sh
+    sudo reboot
+    speaker-test
 
 
 Custom Voice HAT Users
