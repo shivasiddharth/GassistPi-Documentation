@@ -179,6 +179,6 @@ Run the following in the terminal::
      cd /home/${USER}/
      git clone https://github.com/shivasiddharth/seeed-voicecard
      cd ./seeed-voicecard/
-     sudo ./install.sh
+     sudo ./install.sh --compat-kernel
      sudo reboot
      speaker-test
