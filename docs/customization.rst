@@ -36,7 +36,7 @@ Controlling Sonoff-Tasmota, Domoticz devices from Google Home
 Using the Interpreter Mode
 --------------------------
 
-.. note:: Google has the interpreter feature enabled in the cloud. That is, you can use the interpreter without this customization hack. You can leave this feature disabled in the config.yaml.   
+.. note:: Google has the interpreter feature enabled in the cloud. That is, you can use the interpreter without this customization hack. You can leave this feature disabled in the config.yaml.
 
 .. note:: This uses GOOGLE CLOUD SPEECH API. Free usage is limited to `60MINS/MONTH <https://cloud.google.com/speech-to-text/pricing>`_.
 
@@ -688,6 +688,7 @@ Music Streaming from YouTube
 
 Music Streaming from Google Music
 ---------------------------------
+..note:: `Due to Google shutting down the Google Music service/app <https://support.google.com/googleplaymusic/answer/9973710?hl=en>`_, the parts of codes pertaining to this feature have been commented out.   
 
 The music streaming from Google Music is facilitated by using `gmusicapi. <https://unofficial-google-music-api.readthedocs.io/en/latest/>`_
 
