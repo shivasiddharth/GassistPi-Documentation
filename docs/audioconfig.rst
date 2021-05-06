@@ -110,15 +110,24 @@ Run the following in the terminal::
        speaker-test
 
 
-Respeaker Mic HAT Users
+Respeaker/Waveshare/Raspiaudio 2 Mic HAT Users
 ---------------------------------
 Run the following in the terminal::
 
        sudo apt-get update
        cd /home/${USER}/
-       git clone https://github.com/shivasiddharth/seeed-voicecard
-       cd ./seeed-voicecard/
-       sudo ./install.sh
+       git clone https://github.com/shivasiddharth/WM8960-Audio-HAT
+       cd ./WM8960-Audio-HAT/   
+       sudo ./install.sh    
+Before restarting, run::     
+
+       sudo nano /etc/pulse/default.pa    
+In that, add the following lines and save::    
+
+       load-module module-alsa-source device = hw: 0,0
+       load-module module-alsa-sink     
+Now, you can reboot::     
+
        sudo reboot
        speaker-test
 
@@ -171,14 +180,24 @@ Run the following in the terminal::
      speaker-test
 
 
-Respeaker Mic HAT Users
+Respeaker/Waveshare/Raspiaudio 2 Mic HAT Users
 ---------------------------------
 Run the following in the terminal::
 
-     sudo apt-get update
-     cd /home/${USER}/
-     git clone https://github.com/shivasiddharth/seeed-voicecard
-     cd ./seeed-voicecard/
-     sudo ./install.sh    
-     sudo reboot
-     speaker-test
+       sudo apt-get update
+       cd /home/${USER}/
+       git clone https://github.com/shivasiddharth/WM8960-Audio-HAT
+       cd ./WM8960-Audio-HAT/   
+       sudo ./install.sh    
+Before restarting, run::     
+
+       sudo nano /etc/pulse/default.pa    
+In that, add the following lines and save::    
+
+       load-module module-alsa-source device = hw: 0,0
+       load-module module-alsa-sink     
+Now, you can reboot::     
+
+       sudo reboot
+       speaker-test
+
