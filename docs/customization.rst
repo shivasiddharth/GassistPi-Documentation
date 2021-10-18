@@ -332,8 +332,9 @@ Playing Spotify Playlist
 
 1. Click `here <https://developer.spotify.com/dashboard/login>`_ and register for a spotify developer account, if you already don't have one.
 2. In the developer's dashboard, choose **CREATE A CLIENT ID**. In the pop-up window provide the requested details.
-3. Click on the new app created and copy the **CLIENT ID** and **CLIENT SECRET**. Paste it in the config.yaml file in the indicated space.
-4. Access spotify `here <https://www.spotify.com/account/overview/>`_ and copy the username to be entered in config.yaml.
+3. Set the Redirect URIs to http://localhost:8888
+4. Click on the new app created and copy the **CLIENT ID** and **CLIENT SECRET**. Paste it in the config.yaml file in the indicated space.
+5. Access spotify `here <https://www.spotify.com/account/overview/>`_ and copy the username to be entered in config.yaml.
 
 **Command Syntax:**
 
@@ -688,7 +689,7 @@ Music Streaming from YouTube
 
 Music Streaming from Google Music
 ---------------------------------
-..note:: `Due to Google shutting down the Google Music service/app <https://support.google.com/googleplaymusic/answer/9973710?hl=en>`_, the parts of codes pertaining to this feature have been commented out.   
+..note:: `Due to Google shutting down the Google Music service/app <https://support.google.com/googleplaymusic/answer/9973710?hl=en>`_, the parts of codes pertaining to this feature have been commented out.
 
 The music streaming from Google Music is facilitated by using `gmusicapi. <https://unofficial-google-music-api.readthedocs.io/en/latest/>`_
 
