@@ -12,8 +12,8 @@ Supported Platforms
  - Skip the updation process when setting up a fresh copy of Raspbian OS. 
 
 Any single board computer or machine running one of the following OS:
- - Armbian Stretch
- - Raspbian Stretch and Buster
+ - Armbian Buster and Bullseye
+ - Raspbian Buster and Bullseye
  - OSMC Stretch
  - Ubuntu Bionic
 
