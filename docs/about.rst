@@ -5,9 +5,10 @@
 *******************
 About this project
 *******************   
-Note
 
-Developments have been stopped and this project is no longer maintained.    
+.. note::   
+ Developments have been stopped and this project is no longer maintained.      
+
 
 In May of 2017, Google Released it's AIY Projects kit. Initially not many had access to it, so that is when I started modifying the Google Assistant SDK adding AIY like features to help out the ones left without the kit.
 
