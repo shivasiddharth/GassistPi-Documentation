@@ -5,6 +5,9 @@
 *******************
 About this project
 *******************   
+Note
+
+Developments have been stopped and this project is no longer maintained.    
 
 In May of 2017, Google Released it's AIY Projects kit. Initially not many had access to it, so that is when I started modifying the Google Assistant SDK adding AIY like features to help out the ones left without the kit.
 
@@ -17,3 +20,5 @@ It has some interesting custom actions for both entertainment and home-automatio
 This is a project for the single board community community, driven by the community.
 
 .. _page: https://gassistpi-documentation.readthedocs.io/en/latest/starting.html#supported-platforms
+
+  
